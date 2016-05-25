@@ -1,0 +1,18 @@
+#block-views-news-related-news-block {
+  h2, a {
+    color: #666;
+    font-size: 13px;
+    line-height: normal;
+  }
+  .views-row {
+    border-bottom: 1px dotted #aaa;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+  }
+  .content > .view > .view-content .views-row:last-child {
+    border-bottom: none;
+  }
+  .views-field-field-description {
+    display: none;
+  }
+}

@@ -1,0 +1,126 @@
+/*
+.view-hero-images {
+  color: white;
+  position: relative;
+  z-index: 0;
+  background: black;
+  width: 75%;
+  margin: 5% auto 0;
+  @media #{$s} {
+    width: 95%;
+    margin-left: 0;
+    height: 200px;
+  }
+  .slide {
+      opacity: 0;
+      height: 0;
+      z-index: 1;
+      @include transition(all 0.3s);
+    }
+  .slide.active {
+    opacity: 1;
+    z-index: 10;
+    @include transition(all 1.5s);
+  }
+  h2 {
+    @include text-shadow( 0 0 5px rgba(0,0,0,0.7) );
+    color: white;
+    font-family: $headline; font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    @media #{$s} {
+      margin-top: 12px;
+      line-height: 25px;
+      font-size: 22px;
+    }
+  }
+  img {
+    max-width: 60%;
+    height: auto;
+
+  }
+  a.hero-image-button {
+    @include border-radius(2px);
+    //@include text-shadow(0 -1px 1px #000);
+    background: #ed1c24;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font: $headline;
+    margin-top: 20px;
+    padding: 6px 11px 5px 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    &:after {
+      @include icon('arrow-right', #eee);
+      display: inline-block;
+      margin-left: 7px;
+    }
+  }
+  p {
+    max-width: 500px;
+    @media #{$s} {
+      max-width: 95%;
+    }
+  }
+  .teaser {
+    color: white;
+  }
+  .widget_pager {
+    background: rgba(222,222,222,0.7);
+    position: absolute;
+    right: 0;
+    top: 365px;
+    z-index: 10;
+    @media #{$s} {
+      //margin-top: 110px;
+      display: none;
+    }
+    @media #{$m} {
+      top: 218px;
+      margin-right: 27px;
+    }
+    > div {
+      background: #333;
+      border: 1px solid #423334;
+      color: #fff;
+      float: left;
+      font-family: $body;
+      font-size: 11px;
+      height: 16px;
+      line-height: 1.2em;
+      margin: 4px 1px;
+      text-align: center;
+      width: 16px;
+      &.pause {
+        font-family: fontAwesome;
+        font-size: 9px;
+        line-height: 14px;
+      }
+      &.active, &:hover {
+        background: #e71b23;
+        border-color: #9a524d;
+        cursor: pointer;
+      }
+      &:hover {
+        background: #777;
+      }
+      &.active:hover {
+        background: #970010;
+      }
+      &:first-child {
+        margin-left: 5px;
+      }
+      &:last-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+*/

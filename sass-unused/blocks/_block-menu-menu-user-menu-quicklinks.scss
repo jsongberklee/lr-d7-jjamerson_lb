@@ -1,0 +1,77 @@
+#block-menu-menu-user-menu-quicklinks {
+  //float: right;
+  position: relative;
+  h3 {
+    //@include visuallyhidden();
+  }
+  @media #{$s} {
+    display: none;
+  }
+  .content {
+    li {
+      //float: left;
+      a {
+        $icon-color: #fff;
+        $icon-hover-color: $berklee-red;
+        @include text-shadow(1px 1px 1px rgba(0, 0, 0, 0.5) );
+        color: #eee;
+        //font-size: 12px;
+        //line-height: 35px;
+        //letter-spacing: 1px;
+        //margin-left: 15px;
+        //text-transform: uppercase;
+        @media #{$l} {
+          //margin-left: 9px;
+        }
+        @media #{$m} {
+          //font-size: 10px;
+          //line-height: 3.4em;
+          //margin-left: 5px;
+        }
+        &[href*=calendar], 
+        &[href*=mail],
+        &[href*=drive] {
+          //color: transparent;
+          //display: block;
+          //font-size: 0;
+          //line-height: 0;
+          //margin-left: 0;
+          //width: 30px;
+          @media #{$m} {
+            //width: 25px;
+          }
+          &:before {
+            //font-size: 14px;
+            //line-height: normal;
+            margin-right: 0.5em;
+            @media #{$m} {
+              font-size: 14px;
+            }
+          }
+          &:hover {
+            @include text-shadow(none);
+            text-decoration: none;
+            color: $berklee-red;
+            &:before {
+              color: $berklee-red;
+              
+            }
+          }
+        }
+        
+        &[href*=calendar]:before {
+          @include icon('icon-calendar', $icon-color);
+        }
+        &[href*=mail]:before {
+          @include icon('icon-envelope', $icon-color);
+        }
+        &[href*=drive]:before {
+          @include icon('icon-file-text', $icon-color);
+        }
+        &:hover {
+          color: $berklee-red;
+        }
+      }
+    }
+  }
+}

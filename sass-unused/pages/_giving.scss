@@ -1,0 +1,134 @@
+#block-views-giving-giving-spotlight-block { // giving spotlight block
+  background: transparent !important;
+}
+
+.view-giving-giving-spotlight {
+  .article-image {
+    float: left;
+    img {
+      margin: 0 10px 0 0;
+      padding: 0;
+      width: 150px;
+      height: auto;
+    }
+  }
+}
+
+.page-node-2233701, .page-node-2247456 {
+}
+
+.block.give-now-mini-form {
+  span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  input[name="tempField.otherAmount"] {
+    height: 26px;
+    width: 94%;
+  }
+  .view-footer {
+    display: block;
+    margin-top: 10px;
+    a {
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+  #transProgramName {
+    display: none;
+  }
+}
+
+.view-giving-giving-profiles {
+  .views_slideshow_slide {
+    padding: 0;
+  }
+  .field-teaser {
+    @include transition(all 0.3s ease);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2em;
+    &, p {
+      color: white;
+      @include text-shadow(1px 1px 1px black);
+    }
+  }
+  .giving-slogan {
+    font-family: $headline; font-weight: 100;
+    font-size: 24px;
+    font-style: italic;
+    //color: #555;
+  }
+  .giving-quote {
+    margin: 5px 1px;
+    display: block;
+    width: 45%;
+    @media #{$l} {
+      width: 66%;
+    }
+    &, p {
+      font-family: $body; font-style: italic;
+      font-size: 18px;
+      max-width: none !important;
+      //color: #888;
+    }
+  }
+  .giving-name {
+    font-family: $headline; font-weight: 100;
+    text-align: right;
+    display: block;
+    //color: #847f7f;
+    font-size: 16px;
+    margin-right: 4px;
+    padding-right: 55%;
+    @media #{$l} {
+      padding-right: 40%;
+    }
+  }
+  &:hover {
+    .field-teaser {
+      background: rgba(0,0,0,0.4);
+    }
+    .giving-links {
+      opacity: 1;
+    }
+  }
+  .giving-links {
+    opacity: 0;
+    width: 45%;
+    @media #{$l} {
+      width: 60%;
+    }
+    @include transition(all 0.3s ease);
+    clear: both;
+    margin-top: 20px;
+    padding-top: 2px;
+    a {
+      display: block;
+      font-size: 14px;
+      &:first-child { border-bottom: 1px solid #ccc; }
+      color: white;
+      font-size: 13px;
+      padding: 5px 0 3px;
+      @include text-shadow(1px 1px 2px black);
+    }
+  }
+  .field-name-field-personas-image img { 
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+#block-views-giving-giving-profiles-block-1 {
+  @media #{$m}  { display: none; }
+  & > .content {
+    padding: 0 !important;
+  }
+}

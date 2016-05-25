@@ -1,0 +1,33 @@
+#lightbox.lightbox2-alt-layout {
+  a#nextLink, a#prevLink {
+    background: none !important; 
+    text-decoration: none;   
+    &:after {
+      font-size: 30px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:hover:after {
+      color: #333;
+    }
+  }
+  a#nextLink {
+    &:after {
+      @include icon('icon-chevron-right');
+    }
+  }
+  a#prevLink {
+    &:after {
+      @include icon('icon-chevron-left');
+    }
+  }
+  /*
+  #bottomNavClose {
+    background: none !important;
+    &:after {
+      @include icon('icon-remove-circle');
+    }
+  }
+  */
+}

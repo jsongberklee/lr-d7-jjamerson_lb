@@ -1,0 +1,17 @@
+.view-links-related-links {
+  li.views-row {
+    position: relative;
+    padding-left: 15px;
+    font-size: 13px;
+    &:before {
+      background: #888;
+      content: '';
+      display: block;
+      height: 4px;
+      left: 5px;
+      position: absolute;
+      top: 42%;
+      width: 4px;
+    }
+  }
+}

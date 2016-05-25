@@ -1,0 +1,184 @@
+#front-video-container {
+	position: relative;
+	background: black;
+	width: 100%;
+	height: 500px;
+	max-height: 500px;
+	overflow: hidden;
+	@include transition(all 1.5s ease);
+	//height: 100%;
+	//-webkit-transform: scale(1.7);
+	left: 0;
+	//-webkit-animation: videofadein 8s;
+	@media #{$s} {
+		display: none;
+	}
+	div.video, iframe {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		font-family: $body;
+	}
+}
+@-webkit-keyframes videofadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+#front-video {
+	height: 810px;
+}
+#front-video-player {
+}
+#front-video-chrome {
+	height: 60px;
+	padding-left: 5%;
+	padding-right: 5%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	bottom: 0;
+}
+#video-info {
+	background: #ddd;
+	border-radius: 4px;
+	bottom: -5px;
+	box-sizing: border-box;
+	color: #333;
+	float: left;
+	font-size: 1em;
+	height: auto;
+	line-height: 1.5em;
+	opacity: 0.7;
+	padding: 0.5em 1em 1em;
+	position: absolute;
+	width: 50%;
+	@include transition(transform 0.4s ease, opacity 0.2s ease, background 0.4s ease, color 0.3s ease);
+	-webkit-animation: video-info-in 2s;
+	@media #{$s} {
+	  display: none;
+	}
+	&:hover {
+		opacity: 0.9;
+	}
+}
+@-webkit-keyframes video-info-in {
+	from {
+		transform: translate3d(0, 50px, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+/*#video-info:hover, */
+/*
+#video-info.poke {
+	transform: translate3d(0,-100px,0);
+	background: rgba(230,230,230,0.9);
+	color: black;
+	opacity: 1;
+}*/
+#video-info h3 {
+	margin: 0.5em 0;
+	font-weight: 100;
+	letter-spacing: 0.4px;
+}
+/* disable hover state since the video's description isn't being exposed:
+#video-info h3:hover {
+	cursor: pointer;
+}
+*/
+#video-info-button {
+	display: none; // disabling for now
+	@media #{$s} {
+		display: none;
+	}
+}
+#video-info-button.poke {
+	/*
+	color: black;
+	text-shadow: 2px 2px 3px rgba(250,250,250,0.2);
+	*/
+	border-bottom: 3px solid red;
+}
+#front-video-controls {
+	max-width: 1200px;
+	width: 50%;
+	float: right;
+}
+.video-controls {
+	@include transition(all 2s ease);
+	&.enabled {
+		opacity: 1;
+	}
+}
+#front-video-controls button {
+	background: none;
+	border: none;
+	border-bottom: 3px solid black;
+	color: white;
+	float: right;
+	line-height: 4px;
+	position: relative;
+	text-align: center;
+	width: 65px;
+	z-index: 1;
+  color: rgba(180,180,180,0.7);
+  font-weight: 100;
+  font-size: 11px;
+  margin-top: -14px;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+	@include transition(border-bottom-color 0.33s ease);
+	@media #{$s} {
+		font-style: 15pt;
+	}
+	i {
+		color: white;
+		width: 100%;
+		font-size: 30pt;
+		line-height: 57px;
+
+	}
+}
+div#video-next-button, div#video-previous-button {
+	color: white;
+	font-size: 20pt;
+	position: absolute;
+	top: 50%;
+	padding: 30px;
+	.fa:before { box-shadow: 2px 2px 2px rgba(0,0,0,0.1); }
+	&.enabled {
+		opacity: 0.25;
+		@include transition(opacity 0.2s ease);
+	}
+	&:hover {
+		cursor: pointer;
+	}
+
+	@media #{$s} {
+		top: 5%;
+		margin-top: -15px;
+		padding-top: 15px;
+	}
+}
+div#video-next-button.enabled:hover, div#video-previous-button.enabled:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+div#video-next-button {
+	right: 5%;
+	padding-right: 0;
+}
+div#video-previous-button {
+	left: 5%;
+	padding-left: 0;
+}
+#front-video-controls div:hover {
+	color: white;
+	cursor: pointer;
+	border-bottom-color: #d81118;
+}

@@ -1,0 +1,19 @@
+#block-views-event-recent-block {
+  .views-row {
+    border-bottom: 1px dotted #888;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+  }
+  .views-row:last-child {
+    border-bottom: none;
+  }
+  .views-field-field-dates {
+    font-size: 13px;
+  }
+  .views-field-field-description {
+    display: none;
+  }
+  .views-field-field-event-venue {
+    display: none;
+  }
+}

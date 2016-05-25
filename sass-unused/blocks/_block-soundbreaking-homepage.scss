@@ -1,0 +1,131 @@
+.soundbreaking-homepage-block {
+  @include border-radius(2px);
+  @include box-shadow(2px 2px 10px rgba(0,0,0,0.5));
+  background: black;
+  background: rgba(255,255,255,0.75);
+  clear: both;
+  height: 49px;
+  line-height: 49px;
+  overflow: hidden;
+  position: relative;
+  //@media #{$not-small} {
+    width: 100%;
+    height: 300px;
+    padding: 0 5%;
+    .soundbreaking-background {
+      display: none;
+    }
+    background: url('#{$images}/backgrounds/soundbreaking-slide-1.jpg') no-repeat;
+    background-size: cover;
+    .soundbreaking-logo {
+      background: url('#{$images}/backgrounds/soundbreaking-logo-white-text.png') no-repeat;
+      background-size: 400px;
+      content: '';
+      display: block;
+      width: 540px;
+      height: 47px;
+      @include box-sizing(border-box);
+      padding-left: 540px;
+      margin-top: 2em;
+      position: relative;
+      float: none;
+    }
+  //}
+  @media #{$s} {
+    padding: 0 !important;
+    height: auto;
+    border-top: 2px solid #888;
+  }
+  .soundbreaking-logo {
+    float: left;
+    width: 32%;
+    max-width: 385px;
+    @media #{$s} {
+      width: 100%;
+      margin: auto;
+      margin-top: 12px;
+      background-size: 100%;
+      float: none;
+      clear: both;
+      display: block;
+      padding: 11px 0 10px;
+    }
+  }
+  .blurb {
+    display: block;
+    width: 100%;
+    clear: both;
+    float: left;
+    margin-top: 1.5em;
+    position: relative;
+    height: 105px;
+    @media #{$s} {
+      display: block;
+      width: 100%;
+      float: none;
+      clear: both;
+      height: 54px;
+      overflow: hidden;
+      margin-top: 0px !important;
+    }
+    p {
+      width: 66%;
+      max-width: 550px;
+      font-size: 28px;
+      position: absolute;
+      top: 0;
+      font-style: italic;
+      color: $berklee-red;
+      line-height: normal;
+      opacity: 0;
+      @include transition(all 3s ease);
+      strong {
+        font-style: italic;
+        color: white;
+        font-weight: normal;
+      }
+      @media #{$s} {
+        font-size: 13px;
+        margin: 0;
+        margin-top: 5px;
+        display: block;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        @include box-sizing(border-box);
+        text-align: center;
+      }  
+    }
+    p.active {
+      opacity: 1;
+    }
+    
+  }
+  .button {
+    background: rgba(200, 0, 0, 0.75);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    height: 37px;
+    font-size: 18px;
+    line-height: 37px;
+    position: relative;
+    z-index: 1;
+    float: left;
+    padding-left: 2em;
+    padding-right: 2em;
+    @media #{$s} {
+      clear: both;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+    &:after {
+      @include icon('icon-chevron-right', #eee);
+      display: inline-block;
+      float: right;
+      margin-left: 6px;
+      margin-top: 2px;
+    }
+  }
+}

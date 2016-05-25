@@ -1,0 +1,281 @@
+.view-featured-event, 
+.page-slideshow, 
+.page-slideshow-wide,
+.page-slideshow-portrait {
+  background: #eee;
+  color: black;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+  line-height: 1.4em;
+  .views_slideshow_slide {
+    background: #eee;
+    height: 350px;
+    padding: 10px;
+  }
+  @media #{$s} {
+    display: none;
+  }
+  height: 325px;
+  
+  h2 {
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+  }
+  &:not(.page-slideshow-portrait) img {
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #000;
+    margin: 0;
+    padding: 0;
+  }
+  a.hero-image-button {
+    @include border-radius(2px);
+    @include icon('arrow-right', #aaa, 0.7);
+    @include text-shadow(0 -1px 1px #000);
+    background: #ed1c24;
+    color: #f00;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font: $headline;
+    margin-top: 20px;
+    padding: 6px 25px 5px 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6em;
+  }
+  .date-display-single {
+    font-family: $headline; font-weight: normal;
+    display: block;
+    font-size: 13px;
+  }
+  .field-venue {
+    display: block;
+    font-size: 13px;
+    font-family: $headline; font-weight: 100;
+    color: #666;
+    margin-bottom: 14px;
+  }
+  .teaser {
+    color: #000;
+  }
+  .widget_pager {
+    background: rgba(222,222,222,0.7);
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    padding: 4px 6px;
+    > div {
+      font-size: 11px;
+      border: 1px solid #423334;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      margin-right: 3px;
+      background: #333;
+      color: #fff;
+      float: left;
+      &.active, &:hover {
+        background: #e71b23;
+        border-color: #9a524d;
+        cursor: pointer;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .pause {
+      font-family: fontAwesome;
+    }
+  }
+  a.views-more-link {
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 0;
+  }
+}
+
+.page-slideshow-portrait {
+  height: 250px;
+  h2 {
+    font-size: 18px;
+  }
+  .views_slideshow_slide {
+    height: 250px;
+    padding-left: 190px;
+  }
+  .widget_pager {
+    margin-top: 217px;
+  }
+  img {
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  p {
+  }
+}
+
+.page-slideshow.full-width-image {
+  position: relative;
+  background: black;
+  .views-row {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    &.active {
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+  &:hover .views-row.active img {
+    opacity: 0.5;
+  }
+  .field-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  img {
+    @include transition(all 0.3s ease);
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .views-row > div:not(.field-image) {
+    z-index: 5;
+    position: relative;
+    margin: 1em 1em 0.3em;
+    color: white;
+    a, p, h2, h3, div, span {
+      color: white;
+      text-shadow: 1px 1px 1px black;
+    }
+  }
+  h2, h3 {
+    a {
+      font-family: $headline; font-weight: 100;
+      font-size: 24px;
+    }
+  }
+}
+
+#block-views-exp-event-list-page, .region-content, .region-content-top {
+  .views-exposed-form {
+    border-bottom: 1px dotted #ccc;
+    padding: 8px 0 3px;
+    margin-bottom: 20px;
+    .form-item {
+      margin-bottom: 0;
+    }
+    input {
+      margin-bottom: 0;
+    }
+    .description {
+      color: #666;
+      font-size: 13px;
+      font-family: $body; font-style: italic;
+      margin-top: 2px;
+    }
+    &:after {
+      display: block;
+      width: 100%;
+      border-bottom: 1px dotted #ccc;
+      height: 16px;
+      content: '';
+    }
+    label {
+      color: #555;
+      margin-bottom: 3px;
+      margin-left: 2px;
+    }
+  }
+
+  .views-exposed-widgets > div {
+    float: left;
+    margin-right: 20px;
+  }
+  .views-submit-button, .views-reset-button {
+    margin-top: 6px;
+    margin-left: 5px;
+  }
+}
+
+/* WIDTHS: One sidebar */
+body.one-sidebar .view-featured-event,
+body.one-sidebar .page-slideshow, 
+body.one-sidebar .page-slideshow-portrait,
+body.one-sidebar .page-slideshow-wide,
+body.two-sidebars .page-slideshow-wide {
+  width: 100%;
+  .views_slideshow_slide {
+    width: 100%;
+  }
+  &:not(.page-slideshow-portrait) img { 
+    width: 75%;
+  }
+  h2, p, .field-venue, .date-display-single {
+    max-width: 22%;
+  }
+}
+
+body.one-sidebar .page-slideshow-portrait {
+  img {
+    max-width: 175px;
+  }
+  h2, p {
+    max-width: 600px;
+  }
+}
+
+/* WIDTHS: Two sidebars */
+
+body.two-sidebars .page-slideshow-portrait {
+  img {
+    max-width: 175px;
+  }
+  h2, p {
+    max-width: 600px;
+  }
+}
+
+
+/* TO DO: Move this courses stuff to its own file: */
+.view-registrar-course-listing {
+  em {
+    color: #666;
+  }
+  span {
+    font-family: $body; font-weight: bold;
+  }
+  .view-content > div {
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  p {
+    margin-top: 20px;
+  }
+}
+

@@ -1,0 +1,84 @@
+
+//.page-node-2207214, /* LA Plays it forward */
+.page-node-2241161 { /* Noteworthy page */
+  .region-sidebar-second {
+    display: none;
+  }
+  .berklee-gridblock {
+    > p:first-child {
+      display: none;
+    }
+    @media #{$l} {
+      width: 465px !important;
+    }
+    @media #{$m} {
+      width: 465px !important;
+    }
+    @media #{$s} {
+      max-width: 465px;
+      width: 98% !important;
+    }
+  }
+  .berklee-gridblock.giving-form {
+
+  }
+  .berklee-gridblock.donors {
+    > h3:first-of-type {
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    @media #{$s} {
+      display: none;
+    }
+  }
+  .berklee-slider {
+  }
+  .berklee-slider.leadership-donors {
+    > p {
+      display: none;
+    }
+    margin: -30px -8px 0;
+    img {
+      left: 0;
+      margin: 0;
+      max-width: 100%;
+      padding: 0;
+      position: absolute;
+      top: -200px;
+      width: 100%;
+      z-index: -1;
+    }
+    .berklee-slide {
+    }
+    .berklee-slider-canvas {
+      > p {
+        display: none;
+      }
+    }
+    .berklee-slider-navigation {
+      float: right;
+      margin-top: -19px;
+      z-index: 3;
+      position: relative;
+    } 
+    .berklee-slide-title {
+      background: rgba(0,0,0,0.66);
+      color: white;
+      font-size: 14px;
+      left: 0;
+      padding: 3px 10px;
+      position: absolute;
+      top: 177px;
+      width: 100%;
+    }
+    .slider-content {
+      background: rgba(0,0,0,0.66);
+      color: white;
+      height: 126px;
+      padding: 1px 12px;
+      position: absolute;
+      top: 200px;
+      width: 100%;
+    }
+  }
+}

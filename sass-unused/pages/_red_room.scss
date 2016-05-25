@@ -1,0 +1,126 @@
+.node-type-hybrid-homepage.section-210161 {
+  #page-content {
+    @media #{$m} {
+      width: 340px;
+    }
+  }
+  .field-name-body {
+    height: auto;
+    width: 100%;
+    border-right: none;
+    @media #{$not-small} {
+    }
+  }
+  .banner.slider {
+    @media #{$s} {
+      height: 250px;  
+    }
+  }
+  .banner.slider .overlay {
+    @include box-shadow(none);
+    //background: rgba(255, 255, 255, 0.9);
+    background: white;
+  }
+  .banner.slider .slide[number="1"] img {
+    @include box-shadow(none);
+    @media #{$not-small} {
+      min-height: 500px;
+    }
+  }
+  &.admin-menu .banner.slider .slide[number="1"] img{
+    @media #{$not-small} {
+      min-height: 471px;
+    }
+  }
+  .banner.slider img {
+    float: right;
+  }
+  .slide-teaser {
+    @media #{$s} {
+      height: 0;
+      overflow: hidden;
+      margin: 0 !important;
+    }
+  }
+  .sm {
+  }
+  .region-sidebar-first #block-berklee-site-section-menu {
+    li:nth-child(n+8) {
+      display: inherit;
+    }
+  }
+  .width-full.videos {
+    @media #{$not-small} {
+      box-shadow: inset 0 5px 10px #bbb;
+      background: #fafafa;
+      clear: both;
+      padding-top: 30px;
+      background: #ddd;
+    }
+  }
+  .region-sidebar-second {
+    z-index: 100;
+  }
+  #block-views-exp-events-page {
+    padding: 0 20px;
+  }
+  #edit-keys-wrapper {
+    //width: 100%;
+    //display: none;
+  }
+  @media #{$l} {
+    .views-exposed-widgets > div {
+      margin-right: 10px;
+    }
+    #block-views-exp-events-page {
+      width: 93%;
+      float: right;
+    }
+    #block-block-211 iframe {
+      width: 190px;
+    }
+  }
+  #edit-keys-wrapper {
+    width: 100%;
+  }
+  #edit-keys {
+    width: 99%;
+    margin-bottom: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #edit-start-date-wrapper, #edit-end-date-wrapper {
+    margin-right: 0;
+    width: 43%;
+    .container-inline-date .form-item, .date-padding {
+      width: 100%;
+    }
+    input {
+      width: 80%;
+      @media #{$m} {
+        width: 60%;
+      }
+    }
+  }
+  .views-widget-per-page {
+    display: none;
+  }
+  .views-exposed-widgets .views-submit-button {
+    margin: 11px 0 0 0;
+    width: 13%;
+    input {
+      float: right;
+    }
+  }
+  .views-exposed-form:after {
+    height: 0;
+  }
+  .view.news-events-style {
+    h3 {
+      font-family: $headline;
+    }
+    .field-venue {
+      display: none;
+    }
+  }
+}

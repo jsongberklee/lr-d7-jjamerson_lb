@@ -1,0 +1,13 @@
+#block-views-news-recent-news-block {
+  .views-row {
+    border-bottom: 1px dotted #888;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+  }
+  .views-row:last-child {
+    border-bottom: none;
+  }
+  .views-field-field-description {
+    display: none;
+  }
+}

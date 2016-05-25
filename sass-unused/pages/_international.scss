@@ -1,0 +1,17 @@
+body.page-node-2288366.node-type-hybrid-homepage {
+  .region-sidebar-first #block-berklee-site-section-menu {
+    li:nth-child(n+7) {
+      display: none;
+    }
+  }
+  .view-news .field-image img {
+	@media #{$m} {
+		width: 100%;
+		height: auto;
+	}
+	@media #{$s} {
+		width: 100%;
+		height: auto;
+	}
+  }
+}

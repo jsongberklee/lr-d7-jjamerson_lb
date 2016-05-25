@@ -1,0 +1,28 @@
+body.lead-page {
+  @media #{$not-small} {
+    .region-header {
+      height: 400px;
+    }
+    .lead-page-intro {
+      @include text-shadow(1px 1px black);
+      color: rgb(255,250,245);
+      margin-top: 170px;
+      width: 55%;
+
+      h1 {
+        font-size: 38px;
+      }
+      .lead-page-summary {
+        font-size: 120%;
+        line-height: 140%;
+        margin-top: 0.66em;
+      }
+    }    
+  }
+  @media #{$s} {
+    .lead-page-intro {
+      display: none;
+    }
+    
+  }
+}

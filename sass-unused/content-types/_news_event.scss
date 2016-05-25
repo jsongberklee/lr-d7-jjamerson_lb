@@ -1,0 +1,208 @@
+.region-content .node-event, .region-content .node-news {
+  .field-event-type {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  // dates field is used by events:
+  .field-name-field-dates {
+    font-weight: bold;
+    margin-bottom: 0;
+    clear: both;
+    overflow: hidden;
+  }
+  .field-name-field-news-author {
+    font-weight: bold;
+    margin-bottom: 0.25em;
+  }
+  // date field is used by news:
+  .field-name-field-date {
+    color: #666;
+    font-size: 13px;
+  }
+  .field-name-field-event-venue {
+    color: #555;
+    margin-bottom: 0;
+  }
+  .field-name-field-location,
+  .field-name-field-event-address,
+  .field-name-field-city,
+  .field-name-field-state,
+  .field-name-field-country,
+  .field-name-field-zip {
+    color: #666;
+    font-size: 13px;
+  }
+  .field-name-field-event-address,
+  .field-name-field-city {
+    &, div {
+      display: inline;
+    }
+  }
+  .field-name-field-state,
+  .field-name-field-country,
+  .field-name-field-zip {
+    &, div {
+      display: inline;
+    }
+    &:before {
+      content: ', ';
+    }
+  }
+  .field-name-field-description {
+    margin-top: 16px;
+  }
+  .field-name-field-caption, 
+  .field-name-field-image-caption,
+  .field-name-field-credit,
+  .field-name-field-image-credit {
+    display: none;
+  }
+  figure {
+    .field-name-field-image-caption, 
+    .field-name-field-photo-credit {
+      display: block;
+    }
+  }
+  &.node-news .field-name-field-image {
+    margin-top: 23px;
+    @media #{$s} {
+      width: 100%;
+      min-width: 100%;
+      padding: 0;
+      margin: 1em 0;
+    }
+  }
+  &.node-event .field-name-field-image {
+    margin-top: 38px;
+  }
+  .field-name-field-image {
+    float: right;
+    max-width: 65%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    .field-item:not(:first-child) {
+      display: none;
+    }
+    a {
+      font-size: 0;
+      line-height: 0;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      img {
+        margin: 0;
+        padding: 0;
+      }
+      &.lightbox-processed:after {
+        @include icon('icon-plus', 'black');
+        @include text-shadow( 1px 1px 1px rgba(255, 255, 255, 0.3) );
+        background: rgba(120, 120, 120, 0.5);
+        bottom: 0px;
+        color: black;
+        display: block;
+        font-size: 14px;
+        height: 10px;
+        line-height: 10px;
+        padding: 9px;
+        position: absolute;
+        right: 0px;
+        width: 10px;
+        z-index: 100;
+      }
+      &:hover:after {
+        color: $berklee-red;
+      }
+    }
+  }
+  .field-label {
+    font-weight: bold;
+  }
+  .field-name-field-ticket-url a {
+    @include button();
+    display: inline-block;
+    &:after {
+      content: '' !important;
+    }
+  }
+  .image-info-block {
+    font-size: 13px;
+    margin: 0;
+  }
+  .image-caption {
+    font-weight: bold;
+  }
+  .image-credit {
+    color: #aaa;
+    font-size: 11px;
+  }
+  .map-link {
+    opacity: 0.8;
+    font-size: 11px;
+    margin-left: 4px;
+    width: 0;
+    height: 0;
+    &:hover {
+      opacity: 1;
+    }
+    &:before {
+      @include icon('icon-map-marker', $berklee-red);
+    }
+  }
+  span.audio {
+    display: none;
+  }
+
+  .event-cancellation {
+    border-bottom: 1px solid #ede;
+    border-top: 1px solid #ede;
+    display: flex;
+    color: $berklee-red;
+    padding: 3px 0;
+    margin-bottom: 15px;
+  }
+  .addtocal {
+    border: none;
+    padding: 5px 20px;
+    color: #666;
+    margin: 0;
+    &:before {
+      font-family: FontAwesome;
+      content: "\f073";
+      margin-right: 7px;
+      color: #888;
+    }
+    @media #{$not-large} {
+      float: none;
+    }
+  }
+  .addtocal_menu {
+    border: none;
+    margin-top: 6px;
+    padding: 5px 11px;
+    padding-top: 10px;
+    @media #{$not-large} {
+      width: 100%;
+      @include box-sizing(border-box);
+    }
+    @media #{$s} {
+      width: 100%;
+      left: 0 !important;
+      margin-left: 0;
+    }
+    li {
+      border-top: 1px solid #ccc;
+      font-family: $body;
+      font-size: 12px;
+      font-style: italic;
+      font-weight: normal;
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 25px;
+      padding-top: 2px;
+      a:hover {
+        background: transparent;
+        color: $berklee-red;
+      }
+    }
+  }
+}

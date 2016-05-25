@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+
+  /* front block width */
+  .front-block {
+    width: 48%;
+    padding: 12px;
+    margin: 1%;
+  }
+  .front-block.featured {
+    width: 33%;
+    float: right;
+  }
+  .front-block.top-resources {
+    float: left;
+  }
+  .front-block.az-list, .front-block.av-streaming, .front-block.top-resources, .front-block.libguides, .front-block.leadsheet {
+    width: 23%;
+  }
+  .front-block.periodicals {
+    width: 33%;
+  }
+  .front-block.ill-request {
+    width: 26%;
+  }
+  .front-block.open-hours {
+    width: 10%;
+  }
+  .front-block.services {
+    width: 35%;
+  }
+  .front-block.faq-jump {
+    width: 35%;
+  }
+  .front-block.easter-egg {
+    width: 7%;
+  }
+  .front-block.youtube, .front-block.twitter, .front-block.facebook {
+    width: 7.3%;
+  }
+  .front-block.course-reserve {
+    width: 26%;
+  }
+}

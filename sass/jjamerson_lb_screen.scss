@@ -1,0 +1,64 @@
+/*
+ * Notes:
+ *
+ *    You'll need the Sass Globbing Importer plugin for this file to work. It lets us import
+ *    entire directories.
+ *    https://github.com/chriseppstein/sass-globbing
+ *
+ *    Files that begin with an underscore aren't compiled into mirrored CSS files. That's good,
+ *    'cause we're importing all those files into this one, and it's nice to keep the stylesheets
+ *    directory clean.
+*/
+
+// Defining charset because it was being automatically added some times but not others:
+@charset "UTF-8";
+
+// Compass imports:
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+
+// Layouts:
+
+$huge: '(min-width: 1600px)';
+$xl: '(min-width: 1200px)';
+$l:  '(min-width: 980px) and (max-width: 1199px)';
+$m:  '(min-width: 768px) and (max-width: 979px)';
+$s:  '(max-width: 767px)';
+$not-small: '(min-width: 768px)';
+$not-large: '(max-width: 979px)';
+$not-xlarge: '(max-width: 1199px)';
+$huge-width: 1600px;
+$xl-width: 1200px;
+$l-width:  980px;
+$m-width:  768px;
+$s-width:  480px;
+
+$headline: "open sans",​ Arial,​ Helvetica,​ sans-serif;
+
+$body: "open sans",​ Arial,​ Helvetica,​ sans-serif;
+
+$icon-font: fontAwesome;
+
+// Assets:
+$images: "../images";
+
+// Colors:
+//$berklee-red: #ed1c24;
+$berklee-red: #d81118; // darkened for accessibility purposes
+$light-gray: #eee;
+$berklee-gray: $light-gray; // alias
+
+// Merge all stylesheets into this file:
+//@import "../fonts/font-awesome/scss/font-awesome.scss";
+@import "_custom-mixins.scss";
+@import "blocks/*";
+@import "content-types/*";
+@import "general/*";
+@import "modules/*";
+@import "pages/*";
+@import "regions/*";
+@import "site-sections/*";
+@import "views/*";
+@import "_lb-block-search-form.scss";
+@import "_lb.scss";

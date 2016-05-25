@@ -1,0 +1,119 @@
+.node-type-personas {
+  h1#page-title {
+    margin-bottom: -6px;
+  }
+  .field-name-field-personas-image {
+    border: 5px solid #eee;
+    float: right;
+    line-height: 0;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 25px;
+    max-width: 400px;
+    @media #{$s} {
+      max-width: 100%;
+      width: 100%;
+    }
+    img {
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+  .field-name-field-position,
+  .field-name-field-primary-dept-ref,
+  .field-name-field-affiliated-dept-ref,
+  .field-name-field-email,
+  .field-name-field-phone {
+    &, div {
+      display: inline;
+    }
+  }
+  .field-name-field-affiliated-dept-ref,
+  .field-name-field-email {
+    &:before {
+      content: "\A"; 
+      white-space:pre;
+    }
+  }
+  .field-name-field-affiliated-dept-ref {
+    font-style: italic;
+    &:before {
+      margin-top: -4px;
+    }
+    .field-label {
+      font-style: italic;
+      font-weight: normal;
+      color: #888;
+    }
+    &:after {
+      content: '';
+      clear: none;
+      display: none;
+    }
+  }
+  .field-name-field-phone {
+    border-left: 1px solid #888;
+    margin-left: 4px;
+    padding-left: 8px;
+    color: #888;
+    font-style: italic;
+  }
+  .region-content .field.field-name-field-year {
+    &.inline {
+      display: inline;
+    }
+    &, .field-label, .field-item {
+      font-style: italic;
+    }
+  }
+  
+  .field-name-field-department {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .field-name-field-position {
+    color: #888;
+    font-style: italic;
+  }
+  .field-name-field-primary-dept-ref {
+    &:before { 
+      content: ', '; 
+      color: #888;
+      margin-left: -3px;
+      margin-right: 3px;
+    }
+  }
+  .field-name-field-primary-dept-ref {
+    .field-label {
+
+    }
+  }
+  .node-personas > .content > span.field-label {
+    font-size: 13px;
+    margin-top: 10px;
+    display: block;
+    color: #666;
+    font-style: italic;
+  }
+  .field-name-field-description {
+    padding-top: 20px;
+  }
+  .field-name-field-related-links {
+    .field-label {
+      font-family: $headline;
+      font-weight: normal;
+      font-size: 18px;
+      display: block;
+      margin-bottom: 13px;
+    }
+    .field-item:nth-child(n+2) {
+      border-top: 1px dotted #eee;
+      margin-top: 3px;
+      padding-top: 3px;
+    }
+  }
+}

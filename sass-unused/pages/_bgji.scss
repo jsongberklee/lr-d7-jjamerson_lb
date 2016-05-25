@@ -1,0 +1,196 @@
+body.page-node-2246406.node-type-hybrid-homepage, body.page-node-2249786.node-type-hybrid-homepage {
+  .banner.slider {
+    @media #{$s} {
+      height: 110px;
+      .overlay {
+        display: none;
+      }
+    }
+
+  }
+  #logo {
+    @media #{$not-small} {
+      background-image: url("https://www.berklee.edu/sites/default/files/logo-BGJI2.png");
+      background-repeat: no-repeat;
+      height: 135px;
+      margin-top: 10px;
+      width: 134px;
+      img {
+        visibility: hidden;
+      }
+    }
+    @media #{$l} {
+      background-size: 100px 100px;
+      height: 100px;
+      width: 100px;
+    }
+    @media #{$m} {
+      background-size: 80px 80px;
+      height: 80px;
+      width: 80px;
+      margin-top: 20px;
+    }
+    @media #{$s} {
+      background-size: 60px 60px;
+      height: 60px;
+      width: 60px;
+    }
+    
+  }
+  
+  .region-sidebar-first {
+    @media #{$not-small} {
+      nav {
+        margin-top: -7px;
+        & > ul.menu > li:not(:last-child) {
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 5px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .field-item:nth-child(3) {
+    height: 770px;
+  }
+  .row-4 {
+  }
+  .static {
+    h2:nth-of-type(2) {
+      margin-top: 1em;
+    }
+    @media #{$s} {
+      clear: both;
+      float: none;
+      position: relative;
+      top: 0;
+      width: 100%;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+    }
+    .profile {
+      img {
+        float:left;
+        width:100%;
+        height:auto;
+        @media #{$s} {
+          float:none;
+        }
+      }
+      @media #{$not-small} {
+        background-image: url("https://www.berklee.edu/sites/default/files/bgji-logo-background_0.png");
+        background-size: cover;
+        background-position: bottom right;
+        height: 280px;
+        width: 94%;
+        img {
+          margin: 20px 0 0 100px;
+          @media #{$m} {
+            margin: 20px 0 0 20px;
+            background-position: bottom left;
+          }
+        }
+        a {
+          color: white;
+        }
+      }
+      
+      .blurb {
+        @media #{$not-small} {
+          margin-left: 45em;
+          padding-top: 30px;
+          h3 {
+            font-size: 38px;
+            font-weight: bold;
+            color: white;
+          }
+          h4 {
+            font-size: 20px;
+            color: white;
+          }
+        }
+        @media #{$l} {
+          margin-left: 36em;
+        }
+        @media #{$m} {
+          margin-left: 28em;
+        }
+        @media #{$s} {
+          color: #333;
+        }
+        
+      }
+    }
+    .directors {
+      width: 100%;
+      h3 {
+        display: block;
+        float: none;
+      }
+      .director-profiles {
+        float: left;
+        width: 47%;
+        @media #{$m} {
+          margin-right: 20px;
+        }
+        @media #{$s} {
+          @include clearfix();
+          float: none;
+          width: 100%;
+          margin-bottom: 0.5em;
+          padding-bottom: 0.5em;
+          border-bottom: 1px solid #ccc;
+        }
+        a {
+          margin-top: 1em;
+          display: block;
+        }
+        img {
+          float: left;
+          margin: 0px 15px 0 0;
+          height: auto;
+          @media #{$l} {
+            margin: 20px 15px 0 0;
+            padding: 0;
+            width: 200px;
+          }
+          @media #{$m} {
+            margin: 15px 10px 0 0;
+            padding: 0;
+            width: 200px;
+          }
+          @media #{$s} {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.page-node-2285521 {
+  .field-image {
+    float: right;
+  }
+  .field-image img {
+    width: 200px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .field-read-more.button {
+    display: none;
+  }
+  .views-row:after {
+    clear: right;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0;
+    background: #eee;
+  }
+  h3.field-title {
+    padding-top: 5px;
+  }
+}

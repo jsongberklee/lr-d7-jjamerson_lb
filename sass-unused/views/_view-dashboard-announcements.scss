@@ -1,0 +1,29 @@
+.region-sidebar-first .view-dashboard-announcements {
+  .views-row {
+    margin-bottom: 5px;
+    .views-field-title a {
+      color: $berklee-red;
+    }  
+    .views-field-changed {
+      color: #666;
+      font-size: 13px;
+    }
+  }
+  
+}
+
+.region-help .view-display-id-bens {
+  padding: 5px 10px;
+  background: $berklee-red;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  border-radius: 5px;
+  .views-field-title a {
+    font-family: $headline;
+    color: white;
+  }
+  .views-field-changed {
+    color: #ddd;
+    font-size: 13px;
+  }
+}

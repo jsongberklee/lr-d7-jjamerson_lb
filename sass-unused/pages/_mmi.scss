@@ -1,0 +1,27 @@
+// These styles are for the Emerging Artists page //
+body.page-node-2217841 {
+  .views-row h2 ~ p {
+    display:none;
+  }
+  .field-type-image img {
+    float: right;
+    width: 200px;
+    margin: 0 0 2px 20px;
+    padding-left: 0;
+  }
+  ul.links.inline,
+  li.node-readmore.first.last.node-readmore,
+  .field-title,
+  .field-name-field-year {
+    display: none;
+  }
+  .views-row:after {
+    clear: right;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0;
+    background: #eee;
+  }
+}

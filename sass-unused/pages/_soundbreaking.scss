@@ -1,0 +1,259 @@
+body.page-node-2248436 {
+  h1#page-title {
+    color: black;
+    @media #{$not-small} {
+      margin-left: -3px;
+    }
+    @media #{$m} {
+      font-size: 16px;
+      font-family: $headline;
+    }
+    @media #{$s} {
+      font-size: 21px;
+      padding-top: 0;
+    }
+  }
+  .region-sidebar-second {
+    position: relative;
+    z-index: 8;
+    .block {
+      background: transparent;
+    }
+    .next-steps {
+      width: auto;
+    }
+  }
+  .banner.slider {
+    .slide-link {
+      background: transparent;
+      color: transparent;
+      height: 290px;
+      margin-top: -30px;
+      width: 100%;
+    }
+    .slide-info-container {
+      @media #{$s} {
+        top: 45px;
+      }
+    }
+    .slide-title {
+      color: $berklee-red;
+      @media #{$not-small} {
+        font-family: $headline; font-weight: 100;
+        font-size: 50px;
+        width: 100%;
+        line-height: 1em;
+        margin-left: 23%;
+        margin-top: -10px;  
+      }
+      @media #{$l} {
+        font-size: 42px;
+        margin-top: -15px;
+      }
+      @media #{$m} {
+        font-size: 35px;
+        margin-top: -15px;
+      }
+      @media #{$s} {
+        position: absolute;
+        top: 0;
+        margin-top: 0px;
+        font-size: 17px;
+        @include text-shadow (1px 1px 2px black);
+      }
+      & em {
+        font-style: normal;
+        font-family: $headline; font-weight: 100;
+        color: white;
+      }
+    }
+    .slide.first {
+      @media #{$s} {
+        .slide-image img {
+          width: 170%;
+          margin-left: -35%;
+          margin-top: -22%;
+        }  
+      }
+      .slide-title {
+        color: white;
+        display: none;
+      }
+    }
+    .slide .slide-image {
+      background: black;
+    }
+    .slide .slide-image img {
+      min-height: 450px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  #page {
+    @media #{$not-small} {
+      /*padding-bottom: 530px;*/
+    }
+    @media #{$m} {
+      /*padding-bottom: 640px;*/
+    }
+  }
+  #page-content {
+  }
+  #page-content, 
+  .field-name-body {
+    
+  }
+  .field-name-body {
+    width: 100%;
+    border-right: none;
+    @media #{$m} {
+      p {
+        font-size: 14px;
+        line-height: 1.3em;
+      }
+    }
+  }
+  .region-sidebar-first #block-berklee-site-section-menu {
+    margin-top: 20px;
+    /*
+    h3 a {
+      color: transparent;
+      width: 0;
+      height: 0;
+      line-height: 0;
+      margin: 0;
+      padding: 0;
+      display: block;
+      
+      &:before {
+        content: 'Boston Programs';
+        color: #616161;
+        display: block;
+        font-size: 16px;
+        margin-left: -1px;
+        margin-top: 13px;
+        margin-bottom: -10px;
+        min-width: 180px;
+        @media #{$l} {
+          font-size: 16px;
+        }
+      }
+      
+    }
+    */
+  }
+  
+  .width-full.profiles {  
+    h3 {
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      @media #{$m} {
+        /*margin-top: -10px;*/
+      }
+    }
+    .field-body {
+      @media #{$s} {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .profiles h2 {
+    margin-bottom: 8px;
+  }
+  .profiles .field-type-image {
+    height: 200px;
+    overflow: hidden;
+    @media #{$m} {
+      height: 150px;
+    }
+    @media #{$s} {
+      height: 350px;  
+    }
+    img {
+      height: auto;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .width-full.videos {
+    h3 {
+      @media #{$not-small} {
+        font-size: 23px;  
+      }
+      color: black;
+      border-bottom: 3px solid $berklee-red;
+      @media #{$m} {
+        @include box-sizing(border-box);
+        /*color: white;*/
+        z-index: 100;
+        padding-left: 13px;
+        opacity: 0.8;
+      }
+    }
+    @media #{$not-small} {
+      background: #ddd;
+      padding-top: 15px;
+      height: 350px;
+    }
+    .berklee-overlay-video {
+      @media #{$xl} {
+        margin-left: 50px;
+      }
+      @media #{$m} {
+        /*margin-left: 100px;*/
+      }
+      width: 500px;
+      max-width: none;
+      height: auto;
+      @media #{$s} {
+        width: 100%;
+      }
+      img {
+        @media #{$not-small} {
+          margin-top: -50px;  
+        }
+        max-height: none;
+        width: 100%;
+        height: auto;
+      }
+      a {
+        @media #{$not-small} {
+          margin-top: 10px;
+          display: block;
+          height: 275px;
+          overflow: hidden;
+        }
+      }
+      .icon-play {
+        @media #{$not-small} {
+          top: 6px;
+        }
+        @media #{$m} {
+          margin-top: 40px;
+          margin-right: 6px;
+        }
+      }
+      .callout-thumbnail-caption {
+        @media #{$l} {
+          width: 400px;
+        }
+        @media #{$not-small} {
+          margin-left: 520px;
+          margin-top: -240px;
+          background: transparent;
+          color: #666 !important;
+          width: 100%;
+        }
+        @media #{$m} {
+          font-size: 14px;
+          width: 72%;
+        }
+        font-size: 17px;
+        line-height: 1.7em;
+      }
+    }
+  }
+}

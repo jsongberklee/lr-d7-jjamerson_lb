@@ -1,0 +1,14 @@
+.view-tags-related-tags {
+  li.views-row {
+    float: left;
+    padding: 0 11px 9px 0;
+    a {
+      @include border-radius(3px);
+      background: #c5cdd5;
+      color: #413f3f;
+      display: block;
+      padding: 6px 11px;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,372 @@
+body.page-dashboard {
+  #page-content {
+    width: 100%;
+  }
+  #page > .row {
+    @media #{$not-small} {
+      background: #f5f5f5;
+      padding-left: 5%;
+      padding-right: 5%;
+      @include box-sizing(border-box);
+      width: 100%;
+    }
+  }
+
+  .share-holder {
+    display: none;
+  }
+  h1#page-title {
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    font-size: 27px;
+    margin-bottom: 18px;
+  }
+
+  #sidebar-first {
+    @media #{$not-small} {
+      width: 20%;
+      padding-right: 3%;
+      @include box-sizing(border-box);
+      margin: 61px 0 0 0;
+    }
+  }
+
+  #page-content {
+    @media #{$not-small} {
+      width: 60%;
+      @include box-sizing(border-box);
+      padding-right: 3%;
+      margin: 0 0 5em;
+    }
+  }
+
+  #sidebar-second {
+    @media #{$not-small} {
+      width: 20%;
+      @include box-sizing(border-box);
+      margin: 0;
+    }
+  }
+  
+
+  .dashboard-alert-medium {
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    @include border-radius(4px);
+    h3 {
+      font-size: 14px;
+      font-family: $headline;
+      color: #555;
+    }
+    p {
+      font-size: 13px;
+      color: #888;
+    }
+  }
+
+  // user info block in right sidebar:
+  #block-inside-berklee-subscriptions-mng-subs-right {
+    // user name:
+    .dashboad-name {
+      font-size: 16px;
+      font-family: $headline;
+      margin-bottom: 7px;
+      &:after {
+      }
+    }
+    .dashboard-subs-list .expand:not(.expanded):after {
+      content: ' Subscriptions';
+    }
+    // user's role:
+    .dashboard-role-wrapper {
+      margin-bottom: 12px;
+      height: 14px;
+      p {
+        color: #555;
+        float: left;
+        font-size: 13px;
+        margin-right: 10px;
+        &:not(:last-child):after {
+          content: '/';
+          margin-left: 7px;
+        }
+      }
+    }
+    // "My Subscriptions"
+    .dashboard-subs-title {
+      @include clearfix();
+      font-size: 14px;
+      font-family: $headline;
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+    // list of subscriptions:
+    ul.dashboard-subs-list {
+      li {
+        margin-bottom: 2px;
+        padding-bottom: 2px;
+        &:not(:last-child) {
+          border-bottom: 1px dotted #ccc;
+        }
+      }
+    }
+    // "Manage Subscriptions" button:
+    .mng_subs {
+      height: 20px;
+      margin-top: 20px;
+      
+    }
+  } 
+
+  // Campus Alerts block:
+  #block-views-7e4aa06709c796c92af8070dfae0c33e {
+    margin-top: 15px;
+    h3 {
+      font-size: 20px;
+      color: black;
+      @media #{$s} {
+        font-size: 15px;
+      }
+    }
+    &:before {
+      @media #{$not-small} {
+        //@include dottedBorder();
+      }
+    }
+    @media #{$s} {
+      border-top: 1px dotted #ddd;
+    }
+  }  
+
+  .region-content, .region-content-top {
+    border-top: 2px solid #ccc;
+    border-left: 1px solid #eee;
+    padding-left: 10px;
+    padding-top: 2em;
+    .block {
+      background: transparent !important;
+      h3 {
+        color: #666;
+        font-size: 15px !important;
+        text-transform: uppercase;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 10px;
+        &:after {
+          display: none !important;
+        }
+      }
+    }
+    .block-dashboard-announcements {
+      padding: 2px 0;
+      .view-footer a {
+        float: right;
+        &:after {
+          @include icon('icon-chevron-circle-right');
+          color: white;
+          float: right;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .region-sidebar-first {
+    .block:not(:first-child):not(#block-views-7e4aa06709c796c92af8070dfae0c33e) {
+      @media #{$not-small} {
+        border-top: 1px dotted #ccc;
+        margin-top: 15px;
+      }
+    }
+    margin-top: 60px;
+    @media #{$s} {
+      margin: 0 20px;
+    }
+    @include span(3);
+    .container {
+      .block > h3 {
+        color: #666;
+        font-size: 15px;
+        border-bottom: 1px solid #eee;
+        text-transform: uppercase;
+      }
+      .block[id*='block-views-dashboard-announcements'] h3 {
+        @media #{$xl} { font-size: 20px; }
+        @media #{$l}  { font-size: 18px; }
+        &:before {
+          content: 'Official ';
+        }
+        &:after {
+          content: ' Announcements';
+        }
+      }
+      /*
+      > .block:first-of-type:before {
+        color: black;
+        content: 'Official Announcements';
+        font-family: $headline;
+        @media #{$xl} { font-size: 20px; }
+        @media #{$l}  { font-size: 18px; }
+      }
+      */
+      a {
+        font-family: $body;
+        font-weight: bold;
+      }
+    }
+    #block-block-121 h3 {
+      @media #{$s} {
+        border-top: 1px dotted #ddd;
+        width: 100%;
+        @include box-sizing(border-box);
+        display: block;
+        a {
+          @include box-sizing(border-box);
+          display: block;
+          text-align: center;
+          width: 100%;
+          background: #eee;
+          padding: 7px;
+          border-radius: 3px;
+          margin-top: 12px;
+        }
+        
+      }
+    }
+    .events-block {
+      .field-image {
+        margin-bottom: 0;
+        img, .default-image {
+          width: 100%;
+          height: auto;
+          max-width: none;
+        }
+      }
+      .news-events-style:not(.no-images) .view-content .views-row > *:not(.field-image):not(.image) {
+        margin-left: 0;
+      }
+      ul.pager {
+        @media #{$s} {
+          border-top: none;
+        }
+      }
+      .pager li {
+        display: none;
+        &.pager-next, &.pager-previous {
+          display: block;
+        }
+        &.pager-next {
+          float: right;
+        }
+        &.pager-previous {
+          float: left;
+        }
+      }
+      .field-tickets {
+        display: none;
+      }
+      a.button {
+        color: white;
+      }
+      .field-description, .field-admission { 
+        display: none;
+      }
+      h3 {
+        margin-top: 0;
+        a {
+          color: $berklee-red;
+        }
+      }
+    }
+  }
+ .region-sidebar-second {
+    @include span(3);
+    padding-top: 55px;
+    h4 {
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+  #inside-berklee-subscriptions-filter-form {
+    > div { display: inline }
+    @include box-shadow(0 0 5px #eee);
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 7px 10px 1px;
+    @media #{$s} {
+      @include box-shadow(none);
+    }
+    label {
+      display: inline;
+      color: #666;
+      line-height: 23px;
+    }
+    select {
+      display: inline;
+      margin-left: 10px;
+      margin-top: 10px;
+      width: 235px;
+    }
+  }
+
+  #block-inside-berklee-subscriptions-subscriptions {
+    h3 {
+    }
+    p.subscription-help-blurb {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    li {
+      border-bottom: 1px dotted #ccc;
+      margin-left: 0;
+      padding-bottom: 10px;
+      @media #{$s} {
+        margin-left: 0;
+      }
+      &:before {
+        background: none !important;
+        @include box-shadow(none !important);
+      }
+      .dba-date {
+        color: #bbb;
+        float: left;
+        font-size: 13px;
+        letter-spacing: 0.76px;
+        padding-right: 5px;
+      }
+      .dba-section {
+        border-right: 1px solid #ddd;
+        color: #777;
+        float: left;
+        font-size: 13px;
+        margin-right: 6px;
+        padding-right: 5px;
+      }
+      .dba-body {
+        clear: both;
+        padding-top: 6px;
+        margin-bottom: 10px;
+      }
+      .dba-more {
+        float: right;
+        font-size: 13px;
+        opacity: 0.1;
+        margin-top:-5px;
+        transition: opacity 0.3s;
+      }
+      &:hover {
+        .dba-more {
+          opacity: 1;
+        }
+      }
+    } // END: li
+  }
+}
+
+#inside-berklee-subscriptions-form {
+  .form-item.form-type-checkbox {
+    float: left;
+    width: 385px;
+  }
+}

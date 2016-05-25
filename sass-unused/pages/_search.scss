@@ -1,0 +1,24 @@
+body.page-search-google {
+  .tabs {
+    opacity: 1;
+  }
+  #google-cse-results iframe {
+    height: 1215px;
+    @media #{$s} {
+      height: 1860px;
+    }
+  }
+  .search-form.google-cse {
+    @media #{$s} {
+      display: none;
+    }
+    input[name="keys"] {
+      margin-bottom: 0;
+      margin-left: 5px;
+    }
+    .form-submit {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}

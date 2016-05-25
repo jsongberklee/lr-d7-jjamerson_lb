@@ -1,0 +1,710 @@
+.section-205211:not(.node-type-landing-page) {
+  &, p {
+    //font-family: $body;
+    em, i {
+      //font-family: $body; font-style: italic;
+    }
+    strong, b {
+      //font-family: $body; font-weight: bold;
+    }
+    a {
+    }
+  }
+  #page-content {
+    position: relative;
+  }
+  .region-header {
+  }
+  .field-name-field-cover-image {
+    img {
+      max-width: 150px;
+    }
+  }
+  .field-name-field-volume-no-,
+  .field-name-field-issue-no-,
+  .field-name-field-season,
+  .field-name-field-year {
+    display: none;
+    clear: none;
+    color: #777;
+    float: left;
+    font-size: 13px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    .field-label {
+      margin-right: 4px;
+    }
+    .field-item {
+      float: left;
+    }
+  }
+  h1#page-title span.pretitle.previous-link {
+    a {
+      margin-right: 10px;
+      opacity: 0.6;
+      &:not(:first-child) { margin-left: 9px; }
+      &:hover { opacity: 1; }
+    }
+    &:before {
+      @include icon('icon-chevron-left', $berklee-red);
+      opacity: 0.6;
+      font-size: 11px;
+      margin-right: 7px;
+      display: inline-block;
+    }
+  }
+  .field-name-field-article-subtitle {
+    color: #888;
+    /*font-family: "Open Sans";*/
+    font-size: 14px;
+    /*font-weight: 600;*/
+    line-height: 1.2em;
+    margin-bottom: 0.2em;
+    margin-top: 0.6em;
+  }
+  .field-name-field-bt-author {
+    color: #888;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-family: $body; font-style: italic;
+  }
+  .region-sidebar-first {
+    h3 {
+      font-size: 15px;
+    }
+  }
+  .field-name-field-article-images {
+    float:right;
+    max-width: 160px;
+  }
+  // BT Footer:
+  #block-menu-menu-berklee-today {
+    clear: both;
+    //border-top: 1px solid #ddd;
+    @include box-shadow(-10px 0 10px #ccc);
+    background: #f1f1f1;
+    padding-top: 12px;
+    padding-bottom: 35px;
+    margin-bottom: -25px;
+    padding-left: 1000px;
+    margin-left: -1000px;
+    width: 4000px;
+    position: relative;
+    & > .content {
+      @include setPageWidth();
+    }
+    h3 {
+      display: none;
+      font-family: $headline; font-weight: 100;
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 10px;
+      /*
+      position: absolute;
+      color: #fcfcfc;
+      z-index: -1;
+      font-size: 153px;
+      font-family: $headline;
+      text-transform: uppercase;
+      margin-top: -42px;
+      */
+    }
+    .menu {
+      column-count: 3;
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      li {
+        padding-top: 12px;
+        border-bottom: 1px dotted #ccc;
+        &:hover {
+          border-bottom: 1px dotted $berklee-red;
+        }
+        a {
+          color: #777;
+          display: block;
+          font-family: $headline; font-weight: 100;
+          &:hover {
+            color: $berklee-red;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  // Hide the dynamic book block module's menu, but keep its title,
+  // since it draws that from the book issue
+  #block-dynamic-book-block-dynamic-book-block {
+    ul {
+      display: none;
+    }
+    
+    h3 {
+      font-family: $body; font-weight: bold;
+    }
+  }
+  #block-views-bt-content-views-menu {
+    h3 {
+      font-family: $body; font-weight: bold;
+    }
+    .views-row {
+      margin-bottom: 1em;
+    }
+    .views-row-group:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+    .titles-match {
+      &.views-row-group { 
+        margin-top: 1em; 
+      }
+      h3 { 
+        display: none;
+      }
+      a {
+        font-family: $body; font-weight: bold;
+        font-size: 15px;
+      }
+    }
+    a.active {
+      color: $berklee-red;
+      font-weight: bold;
+    }
+  }
+}
+
+// Cover Page Only:
+.node-type-bt-cover {
+  background: #fafafa;
+  #page {
+    @media #{$not-small} {
+      //margin-top: 8px;
+    }
+  }
+  .node.node-bt-cover {
+    .links {
+      display: none;
+    }
+  }
+  .region-sidebar-first {
+    display: none;
+  }
+  #page #page-content {
+    background: none;
+    width: 100% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+  }
+  .book_add_child {
+    display: none;
+  }
+  .region-content-bottom a.more {
+    @include moreButton();
+  }
+  h1#page-title {
+    font-family: $headline; font-weight: 100;
+  }
+  #block-system-main .node {
+  }
+  .block.block-berklee-info-block {
+    display: none;
+    position: absolute;
+    top: -85px;
+    width: 100%;
+  }
+  .view-featured-event p, .page-slideshow p, .page-slideshow-portrait p {
+    color: #555;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  #block-views-bt-content-views-block-5,
+  #block-views-bt-content-views-block-7,
+  #block-views-bt-content-views-block-8 {
+    @include box-shadow(1px 1px 1px #ddd);
+    background: white;
+    border: 1px solid #e5e5e5;
+    float: left;
+    width: 31%;
+    padding: 15px;
+    margin-right: 1%;
+    @media #{$s} {
+      width: 100%;
+    }
+    h3 {
+      color: #888;
+      font-family: $headline; font-weight: 100;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+    .views-row, .views-row p {
+      color: #555;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .views-row {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .views-field-field-bt-author {
+      color: #888;
+    }
+  }
+  #block-views-bt-content-views-bt-features {
+    margin-top: 10px;
+    .view.slider.view-display-id-bt_features {
+      @include box-shadow(1px 1px 1px #ddd);
+      border: 1px solid #e5e5e5;
+      max-width: 792px;
+      .views_slideshow_slide {
+        padding: 0;
+        margin: 0;
+        max-width: 792px;
+      }
+      .views-row {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 13px;
+        clear: both;
+      }
+      .views-field-field-article-subtitle {
+        &, p {
+          color: #eee;
+          margin-top: 12px;
+        }
+      }
+      h2 {
+        max-width: inherit;
+        font-size: 20px;
+        &, a {
+          color: white;
+          font-family: $headline; font-weight: normal;
+        }
+      }
+      .author {
+        color: #ccc;
+        font-size: 13px;
+        font-style: italic;
+      }
+      .slider-image img {
+        width: 100%;
+        z-index: -1;
+      }
+    }
+  }
+  #block-views-bt-content-views-block-5, 
+  #block-views-bt-content-views-block-7 .attachment,
+  #block-views-bt-content-views-block-8 .attachment {
+    &:not(.attachment) {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    &.attachment {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+      .views-row {
+        border-bottom: none;
+      }
+      h4 {
+        color: #555;
+      }
+    }
+    .views-row {
+      @include clearfix();
+    }
+    .views-row-group:last-child .views-row {
+      border-bottom: none;
+    }
+    h4.title {
+      font-size: 14px;
+      line-height: 14px;
+      font-family: $headline; font-weight: normal;
+    }
+    h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .article-summary {
+      &, p {
+        font-size: 13px;
+        color: #666;
+      }
+      margin-top: 8px;
+      padding-right: 8px;
+    }
+    .article-image {
+      float: left;
+      width: 100px;
+      height: auto;
+      margin: 12px 10px 2px 0;
+      padding: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .views-field-field-bt-author, .author {
+      &, p {
+        font-size: 13px;
+      }
+    }
+  }
+  #block-views-bt-content-views-block-8,
+  #block-views-bt-content-views-block-7
+   {
+    margin-bottom: 20px;
+  }
+  // List of articles on BT cover page:
+  #block-views-bt-content-views-cover-articles {
+    float: left;
+    margin-right: 2.6%;
+    width: 64.7%;
+    margin-top: 20px;
+    @media #{$s} {
+      width: 100%;
+    }
+    .views-row-group {
+      @include box-shadow(1px 1px 1px #ddd);
+      @include clearfix();
+      margin-bottom: 20px;
+      margin-top: 2px;
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #e5e5e5;
+      .views-row:not(:first-of-type)  {
+        clear: none;
+        float: left;
+        padding: 0;
+        padding-left: 8px;
+        width: 48%;
+        &:nth-child(odd) { 
+          //border-right: 1px solid #ddd;
+        }
+        h4 {
+          font-size: 14px;
+        }
+        .article-summary {
+          display: none;
+        }
+        .article-image {
+          &, img {
+            width: 85px;
+            height: 85px;
+          }
+        }
+        &:after {
+          padding-top: 0;
+          width: 90%;
+          border-bottom: 1px solid #eee;
+        }
+        &.views-row-even:nth-last-child(2):after {
+          border-bottom: none;
+        }
+      }
+    }
+    .views-row {
+      @include clearfix();
+      clear: both;
+      margin-top: 0;
+      margin-bottom: 7px;
+      padding: 7px;
+      &:after {
+        display: block;
+        width: 90%;
+        border-bottom: 1px solid #eee;
+        margin: auto;
+        padding-top: 10px;
+        height: 1px;
+        content: '';
+        clear: both;  
+      }
+      &:last-child {
+        padding-bottom: 4px;
+        margin-bottom: 0;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    h3 {
+      border-top: 1px dotted #bbb;
+      clear: both;
+      color: #888;
+      font-family: $headline; font-weight: 100;
+      font-size: 17px;
+      margin-bottom: 0px;
+      margin-left: 6px;
+      margin-top: 0px;
+      padding-top: 0px;
+      &:first-child {
+        border-top: none;
+      }
+    }
+    h4, .author, .article-summary {
+      //margin-left: 140px;
+    }
+    h4 {
+      font-family: $headline; font-weight: normal;
+    }
+    .author {
+      color: #888;
+      display: block;
+      font-size: 14px;
+      margin-bottom: 6px;
+      font-family: $body; font-style: italic;
+    }
+    .article-summary {
+      margin-top: 10px;
+      padding-right: 10px;
+      &, p {
+        font-size: 14px;
+        color: #666;
+        line-height: 21px;
+      }
+    }
+    .article-image {
+      float: left;
+      margin-left: 0px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      max-height: 150px;
+      overflow: hidden;
+      width: 150px;
+    }
+  }
+}
+
+// new header type, replacing slider:
+.bt-header {
+  @include clearfix();
+  //border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  margin-top: 13px;
+  overflow: visible;
+  .views-row {
+    float: left;
+    width: 33%;
+    padding-right: 2%;
+    border-right: 1px solid #eee;
+    @media #{$s} {
+      height: auto;
+      padding: 15px;
+      width: 100%;
+    }
+    opacity: 0.93;
+    &:hover {
+      opacity: 1;
+      img { @include transform( perspective( 2000px ) rotateY( 1deg ) translateZ(0px) ) };
+    }
+  }
+  .views-row:last-child {
+    margin-right: 0;
+    border-right: none;
+  }
+  .slider-image {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    @media #{$s} {
+      height: auto;
+      width: 100%;
+      float: none;
+      padding-right: 10px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .slider-title {
+    line-height: 25px;
+    margin-bottom: 3px;
+    a {
+      //color: #222;
+      color: #b01;
+      font-size: 18px;
+    }
+  }
+  .views-field-field-article-subtitle {
+    color: #555;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .author {
+    color: #888;
+    font-family: $body; font-style: italic;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 2px;
+  }
+}
+
+
+
+
+.node-type-bt-article {
+  .block.block-berklee-info-block {
+    margin-bottom: 15px;
+  }
+  #block-berklee-site-section-breadcrumb {
+    //display: none;
+  }
+  .node-bt-article {
+    margin-top: -9px;
+    .field-name-field-bt-author {
+      &, .field-label {
+        font-weight: normal;
+        font-family: $body; font-style: italic;
+        color: #666;
+      }
+    }  
+    .field-name-body {
+      margin-top: 13px;
+      /*.media-element-wrapper, img {
+        clear: right;
+        width: 250px !important; 
+        height: auto !important;
+        float: right;
+        margin-left: 1.5em;
+      }*/
+      img.pioneers {
+        width: 130px !important;
+        margin: 0 5px 2px 0;
+      }
+      .field-name-field-photo-credit .field-label {
+        font-weight: normal;
+        font: inherit;
+        color: #666;
+      }
+      /*
+      figcaption, .field-name-field-image-caption {
+        @include box-sizing(border-box);
+        clear: right;
+        color: #666;
+        float: right;
+        font-family: $body; font-style: italic;
+        height: initial;
+        margin-top: -7px;
+        //margin-right: 10px; // Fixes caption - image alignment issue //
+        margin-left: 10px;
+        padding: 0 2px;
+        width: 250px;
+
+        p {
+          display: inline;
+          font-family: inherit;
+        }
+        &, p {
+          font-size: 13px;
+          line-height: 1.3em;
+        }
+        .caption {
+          margin-left: 10px;
+          margin-top: 10px;
+        }
+        &.field-name-field-photo-credit, .credit {
+          display: none;
+        }
+      }
+      .field-name-field-image-caption {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .field-name-field-photo-credit {
+        display: none;
+      }
+      
+      .view-id-bt_content_views.view-display-id-block_4 {
+        img {
+          width: 40% !important;
+          padding: 0 0 5px 5px;
+          margin: 0 0 5px 5px;
+          float: right !important;
+        }
+        figcaption {
+          width: 40%;
+          margin-right: 0;
+          margin-left: 5px;   
+        }
+      }
+      */
+    }
+  }  
+  .book-navigation  {
+    & > ul.menu { 
+      border-top: 1px dotted #ccc;
+      border-bottom: none;
+    }
+    li {
+      padding-left: 20px;
+    }
+    .page-links { display: none; }
+  }
+  .pagination-showall {
+    background: #eee;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    float: right;
+    margin-top: 0;
+    opacity: 0.8;
+    padding: 2px 7px 3px;
+    &:before {
+      display: none !important;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .field-name-field-isotope-tags {
+    display: none;
+  }
+}
+
+.view-bt-content-views.view-display-id-block_3,
+.view-bt-content-views.view-display-id-block_4 {
+  .view-content {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+  }
+  .views-row-group, .views-row {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    break-inside: avoid;
+  }
+  h3 {
+    color: #888;
+    font-family: $headline; font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .views-row:not(.views-row-last) {
+    margin-bottom: 17px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #ddd;
+    overflow: hidden;
+    clear: both;
+  }
+  .views-row-last {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+  }
+  .views-row {
+    &, p {
+      color: #555;
+      font-size: 14px;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }  
+  .media-element-wrapper {
+    display: block;
+  }
+}

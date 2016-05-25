@@ -1,0 +1,73 @@
+.next-steps {
+    p {
+      margin-bottom: 0 !important;
+      margin-left: 45px;
+      font-size: 13px;
+      line-height: 21px !important;
+    }
+    a {
+      text-transform: uppercase;
+      font-family: $headline;
+      font-size: 14px;
+      position: relative;
+    }
+    a.apply:before {
+      @include icon('icon-check-square');
+    }
+    a.more-info:before {
+      @include icon('icon-question-circle');
+    }
+    a.save-the-date:before {
+      @include icon('icon-calendar');
+    }
+    a.contact:before {
+      @include icon('icon-envelope');
+    }
+    a.vendor:before {
+      @include icon('icon-food');
+    }
+    a.sponsor:before {
+      @include icon('icon-caret-square-up');
+    }
+    a.visit:before {
+      @include icon('icon-train');
+    }
+    a.apply, a.more-info, a.save-the-date, a.contact, a.vendor, a.sponsor, a.visit {
+      color: $berklee-red;
+      &:before {
+        color: #868686;
+        display: inline-block;
+        font-size: 34px;
+        margin-left: -45px;
+        position: absolute;
+        width: 45px;
+        top: 0;
+      }
+    }
+    a.more {
+      float: right;
+      color: #5b5b5b;
+      &:after {
+        @include icon('icon-chevron-circle-right');
+        color: #5b5b5b;
+        font-size: 14px;
+        margin-left: 5px;
+        display: inline-block;
+      }
+    }
+  }
+
+.next-steps.global {
+  .content {
+    padding-bottom: 15px;
+  }
+   p.subtext {
+      color: #777;
+      line-height: 15px !important;
+    }
+    a.apply, a.more-info, a.contact {
+      &:before {
+        top: 6px;
+      }
+    } 
+}

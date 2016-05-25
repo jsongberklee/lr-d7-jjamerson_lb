@@ -1,0 +1,127 @@
+.section-209156:not(.node-type-landing-page) {
+  .region-header {
+    background-image: url(#{$images}/header/banner-soundbreaking.jpg);
+  }
+}
+
+.section-209156 {
+  .banner.slider {
+    @media #{$s} {
+      height: 110px;
+      .overlay {
+        display: none;
+      }
+    }
+  }
+  p.subtext {
+    margin-top: 0.5em;
+  }
+  .region-sidebar-second .icon-button {
+    font-size: 18px;
+  }
+  .region-sidebar-first {
+    .content a.button {
+      color: white;
+      font-family: $headline; font-weight: 100;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      width: 83%;
+    }
+  }
+}
+
+.section-209156.node-type-landing-page {
+  .region-sidebar-first .content a.button {
+    width: 100%;
+  }
+}
+
+.view-display-id-soundbreaking_page {
+  .views-row {
+    height: 189px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .views-row-1, .views-row-8 {
+    background: #c7d163;
+    .field-read-more.button a { color: #c7d163; }
+  }
+  .views-row-2, .views-row-9 {
+    background: #f25d7f;
+    .field-read-more.button a { color: #f25d7f; }
+  }
+  .views-row-3, .views-row-10 {
+    background: #9b83bc;
+    .field-read-more.button a { color: #9b83bc; }
+  }
+  .views-row-4, .views-row-11 {
+    background: #f7a162;
+    .field-read-more.button a { color: #f7a162; }
+  }
+  .views-row-5, .views-row-12 {
+    background: #ad614f;
+    .field-read-more.button a { color: #ad614f; }
+  }
+  .views-row-6, .views-row-13 {
+    background: #f24cae;
+    .field-read-more.button a { color: #f24cae; }
+  }
+  .views-row-7, .views-row-14 {
+    background: #4cbce6;
+    .field-read-more.button a { color: #4cbce6; }
+  }
+  .field-image {
+    float: left;
+    max-width: 190px;
+    max-height: 190px;
+    margin-right: 25px;
+    @media #{$m} {
+      margin-right: 10px;
+    }
+    padding: 0;
+    img {
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+      max-height: 189px;
+    }
+  }
+  .field-title {
+    font-family: $headline; font-weight: 100;
+    @media #{$xl} { font-size: 24px; }
+    @media #{$l} { font-size: 18px; }
+    @media #{$m} { font-size: 15px; }
+    margin-bottom: 10px;
+    padding-top: 15px;
+    @media #{$m} {
+      padding-top: 5px;
+    }
+    a {
+      color: white;
+    }
+  }
+  .field-body {
+    margin-bottom: 10px;
+    &, p {
+      color: white;
+      font-size: 14px;
+      line-height: 1.5em;
+      @media #{$m} {
+        line-height: 1em;
+      }
+    }
+  }
+  .field-read-more.button {
+    @include border-radius(0px);
+    background: white;
+    display: inline-block;
+    font-family: $headline; font-weight: 100;
+    padding: 2px 20px;
+  }
+  .field-edit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    a { color: white; }
+  }
+}

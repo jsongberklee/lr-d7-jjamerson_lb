@@ -1,0 +1,51 @@
+.view.personas {
+  .views-row {
+    clear: both;
+    overflow: hidden;
+    padding: 1em 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  .views-field-field-personas-image, .image {
+    @media #{$not-small} {
+      width: 33%;
+      //max-height: 200px;
+      //overflow: hidden;
+      padding: 0 0 2em 2em;
+      float: right;
+      margin-right: 0.5em;
+      @include box-sizing(content-box);
+    }
+    @media #{$s} {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0.2em;
+      background: #eee;
+    }
+  }
+  .views-field-field-biography-type {
+    color: #777;
+    font-style: italic;
+    display: none;
+  }
+  .views-field-field-year {
+    color: #777;
+    font-style: italic;
+  }
+  .views-field-field-primary-dept-ref {
+    font-family: $headline; font-weight: bold;
+  }
+  .views-field-field-affiliated-dept-ref {
+    color: #777;
+  }
+  .views-field-field-persona-teaser {
+    margin-top: 1em;
+    color: #666;
+  }
+}
+

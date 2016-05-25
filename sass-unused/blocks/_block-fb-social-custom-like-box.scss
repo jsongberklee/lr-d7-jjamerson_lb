@@ -1,0 +1,18 @@
+#block-fb-social-custom-like-box,
+#block-fb-social-custom-like-box-admissions {
+  /* To Do: Make the width of the box responsive. The module outputs with as 
+     a fixed pixel value using an inline style. Which is lame. */ 
+  iframe {
+    @media #{$m} {
+      width: 147px !important;
+      margin-left: -4px;
+    }
+    @media #{$l} {
+      margin-left: -4px;
+    }
+    @media #{$xl} {
+      //margin-left: 22px;
+      width: 243px !important;
+    }
+  }
+}

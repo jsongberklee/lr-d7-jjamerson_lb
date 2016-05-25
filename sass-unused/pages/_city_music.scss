@@ -1,0 +1,45 @@
+body.page-node-2292341 {
+  .region-content .field-name-body {
+    width: 100%;
+    border-right: none;
+    padding-left: 0;
+  }
+}
+
+body.page-node-2246546 {
+  .region-sidebar-first #block-berklee-site-section-menu {
+  h3 a {
+      color: transparent;
+      width: 0;
+      height: 0;
+      line-height: 0;
+      margin: 0;
+      padding: 0;
+      display: block;
+      &:before {
+        content: 'Boston Programs';
+        color: #616161;
+        display: block;
+        font-size: 16px;
+        margin-left: -1px;
+        margin-top: 13px;
+        margin-bottom: -10px;
+        min-width: 180px;
+        @media #{$l} {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .banner.slider {
+    @media #{$s} {
+      height: 305px;
+    }
+    .slide img {
+      height: 800px;
+      @media #{$s} {
+        height: auto;
+      }
+    }
+  }
+}

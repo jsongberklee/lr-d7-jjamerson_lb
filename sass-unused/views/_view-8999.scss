@@ -1,0 +1,179 @@
+
+
+.view-8999-status {
+  .view-header {
+    margin-bottom: 22px;
+    background: #eee;
+    padding: 10px;
+  }
+  .views-row {
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    position: relative; // to make absolutely positioned icons relative to the views row
+  }
+  .inline.field {
+    color: #666;
+    font-size: 13px;
+  }
+  h3 {
+    float: left;
+    font-size: 16px;
+    font-family: $headline;
+    
+  }
+  .service-field {
+    margin-left: 22px;
+  }
+  .status-field {
+    &:before {
+      content: ': ';
+    }
+    &:after {
+      @include icon('icon-info-sign', #888);
+      position: absolute;
+      left: 0;
+      top: 16px;
+    }
+    &[class*='aintenance'] {
+      &:after {
+        @include icon('icon-wrench', DodgerBlue);
+      }
+    }
+    &[class*='esolved'],
+    &[class*='aintenance Complete'] {
+      &:after {
+        @include icon('icon-info-sign', #4a4);
+      }
+    }
+    &[class*='lanned-Outage'],
+    &[class*='bnormal'],
+    &[class*='Down'],
+    &[class*='down'] {
+      &:after {
+        @include icon('icon-warning-sign', $berklee-red);
+      }
+    }
+    &[class*='own for Maintenance'] {
+      &:after {
+        @include icon('icon-wrench', $berklee-red);
+      }
+    }
+    &[class*='Known-Issue'] {
+      &:after {
+        @include icon('icon-exclamation-sign', goldenrod);
+      }
+    }
+    &[class*='nformational'],
+    &[class*='Other'],
+    &[class*='other'] {
+      &:after {
+        @include icon('icon-info-sign', #888);
+      }
+    }
+    
+  }
+  .description-field {
+    margin-bottom: 12px;
+    p {
+      font-size: 13px;
+      color: #444;  
+    }
+  }
+  .updated-field {
+    clear: both;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  &:not(.view-display-id-block_1) .view-empty {
+    min-height: 300px;
+    p {
+      margin-top: 17px;
+      background: #eee;
+      padding: 10px;
+    }
+  }
+  &.view-display-id-phone, &.view-display-id-phone_maintenance {
+    .view-header {
+      background: none;
+      padding: inherit;
+      margin-bottom: inherit;
+    }
+    .view-empty {
+      min-height: 60px;
+    }
+    h3 {
+      float: none;
+    }
+    .views-row {
+      border-bottom: none;
+    }
+    hr {
+      border-top: 2px dotted #aaa;
+    }
+    .status-field {
+      color: transparent;
+      line-height: 0;
+      &:after {
+        line-height: 17px;
+      }
+    }
+  }
+}
+
+.region-sidebar-first #block-views-8999-status-block-1 {
+  > h3 {
+    border-bottom: none;
+  }
+  /* Temporarily convert it to a simple link to berklee.net */
+  > h3 a {
+    //&:before { content: 'View '; }
+    color: $berklee-red;
+  }
+  /* END temporary code */
+  margin-bottom: 10px;
+}
+
+.region-sidebar-first  > .container > .block-views,
+.region-sidebar-second > .container > .block-views {
+  clear: both;
+}
+
+.region-sidebar-first  .view-8999-status,
+.region-sidebar-second .view-8999-status {
+  .views-row {
+    padding: 0;
+    clear: both;
+    &:first-child {
+      padding-top: 0;
+      border-bottom: none;
+    }
+  }
+  .status-field:after {
+    font-size: 14px;
+    top: 6px;
+  }
+  .service-field h3 {
+    margin-left: 16px;
+  }
+  h3 {
+    color: black !important;
+    font-family: $body;
+    font-size: 13px !important;
+    line-height: 17px;
+    margin-bottom: 5px;
+    a, div {
+      display: inline;
+    }
+  }
+  label {
+    @include text-shadow(none);
+    font-family: $body;
+  }
+  p {
+    color: #444;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+}

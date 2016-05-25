@@ -1,0 +1,349 @@
+.section-203706 .block .news-events-style,
+.section-203626 .block .news-events-style,
+.section-205211 .block .news-events-style,
+.section-204996 .block .news-events-style,
+.section-210161 .block .news-events-style {
+  &:not(.no-images) .view-content {
+    .views-row > *:not(.field-image):not(.image) {
+      margin-left: 0; /* Fixes the Student Clubs / Berklee Today Authors pages */
+    }
+  }
+}
+
+.block .news-events-style, .block .peeps, .block .peeps-style, .block .announcements-style {
+  .image, .field-image {
+    float: left;
+    margin-bottom: 20px;
+    @media #{$s} {
+      margin-bottom: 5px;
+      width: 100%;
+      max-width: 100%;
+    }
+    img {
+      max-width: 200px;
+      padding-right: 0;
+      margin-right: 1.3em;
+      height: auto;
+      @media #{$s} {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .default-image {
+      width: 200px;
+      height: 200px;
+      margin-right: 1.3em;
+      overflow: hidden;
+      background: url(#{$images}/event-thumbnails/berklee-1902.jpg) no-repeat;
+      background-size: 200px;
+      @media #{$s} {
+        display: none;
+      }
+    }
+    &.venue-Berk-Recital-Hall .default-image {
+      background-image: url(#{$images}/event-thumbnails/berk-recital-hall.jpg); 
+    }
+    &.venue-Cafe-939 .default-image {
+      background-image: url(#{$images}/event-thumbnails/cafe-939.jpg); 
+    }
+    &.venue-Berklee-Performance-Center .default-image {
+      background-image: url(#{$images}/event-thumbnails/bpc.jpg); 
+    }
+    &.venue-David-Friend-Recital-Hall .default-image {
+      background-image: url(#{$images}/event-thumbnails/david-friend.jpg); 
+    }
+    &.venue-Oliver-Colvin-Recital-Hall .default-image {
+      background-image: url(#{$images}/event-thumbnails/oliver-colvin.jpg);  
+    }
+    &.venue-Berklee-Dining-Hall .default-image {
+      background-image: url(#{$images}/event-thumbnails/160.jpg);  
+    }
+  }
+  .views-row-even .field-image .default-image {
+  }  
+  h3 {
+    font-size: 15px;
+    font-weight: normal;
+    @media #{$s} {
+      clear: both;
+      font-size: 16px;
+    }
+  }
+  p, span {
+    font-size: 13px;
+  }
+  p {
+    margin: 5px 0;
+  }
+  .view-header {
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 20px;
+    &:after {
+      content: '';
+      display: block;
+      margin-bottom: 2px;
+      padding: 0;
+      border-bottom: 1px dotted #ddd;
+    }
+  }
+  &:not(.no-images) .view-content {
+    .views-row > *:not(.field-image):not(.image) {
+      @media #{$not-small} {
+        margin-left: 220px;
+      }
+    }
+  }
+.views-row {
+  @include clearfix();
+  clear: both;
+  padding: 14px 0;
+  &:not(:last-child) {
+    border-bottom: 1px dotted #999;
+    @media #{$s} { border-bottom: none; }
+  }
+  @media #{$s} {
+    @include box-shadow( 2px 2px 2px rgba(0,0,0,0.3) );
+    background: white;
+    margin-bottom: 1em;
+    border: 1px solid #eee;
+    padding: 10px;
+  }
+}
+  &.view-events-related-events .views-row {
+    padding: 5px 0 0;
+  }
+  &.view-events-related-events a {
+    // color: #333; // too gray
+  }
+  .views-row:first-child {
+    @media #{$not-small} {
+      padding-top: 0;  
+    }
+  }
+  .date-display-single, .field-date {
+    display: block;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #888;
+    @media #{$s} {
+      font-size: 15px;
+      margin-bottom: 1em;
+    }
+  }
+  .field-department-secondary a {
+    font-size: 13px;
+  }
+  .field-venue, .field-event-venue, .field-location {
+    color: #6a6a6a;
+    display: block;
+    font-size: 13px;
+    font-weight: 100;
+    @media #{$s} {
+      font-size: 15px;
+      margin-top: -1em;
+      margin-bottom: 1em;
+    }
+  }
+  .field-admission {
+    margin-top: 10px;
+    min-height: 16px;
+    .label {
+      font-weight: normal;
+      font-family: $body;
+      color: black;
+    }
+    .field {
+      color: #6a6a6a;
+    }
+  }
+  .field-event-type {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .date-block > span {
+    @include border-radius(4px);
+    @include text-shadow(1px 1px 0 white);
+    background: #d8dce0;
+    border: 1px solid #b6b8bb;
+    color: #303030;
+    display: block;
+    float: right;
+    font-family: $body;
+    font-size: 14px;
+    height: 50px;
+    line-height: 21px;
+    margin-left: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 34px;
+    b {
+      border-bottom: 1px solid #666;
+      display: block;
+      margin-left: 4px;
+      width: 26px;
+    }
+  }
+  .teaser, .field-teaser, .field-description {
+    margin-top: 10px;
+    @media #{$s} {
+      margin-top: 0;
+    }
+    &, p {
+      font-size: 13px;
+    }
+    
+  }
+  &:not(.no-images) {
+    .teaser, .field-teaser, .field-description {
+      ul {
+        @media #{$not-small} {
+          /* margin-left: 130px; */
+        }
+      }
+    }
+  }
+  ul {
+    font-size: 13px;
+
+  }
+  a.views-more-link {
+    display: block;
+    font-size: 13px;
+    margin: 5px 0;
+    padding: 0;
+    text-align: left;
+    @media #{$s} {
+      border-top: 1px dotted #ccc;
+      display: block;
+      padding: 1em 0 0;
+      width: 100%;
+    }
+  }
+  .field-tickets {
+    display: block;
+    a {
+      @media #{$not-small} {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+    }
+  }
+  input[type="submit"] {
+    font-size: 15px;
+  }
+}
+
+#views-exposed-form-Events-page {
+  @media #{$not-small} {
+    .views-exposed-widgets > div {
+      margin: 0;
+    }
+    #edit-keys-wrapper {
+      width: 50%;
+    }
+    #edit-start-date-wrapper,
+    #edit-end-date-wrapper {
+      width: 15%;
+      margin: 0;
+      padding: 0;
+      .container-inline-date .form-item {
+        &, input {
+          width: 94%;
+        }
+      }
+      .description {
+        font-size: 0.8em;
+      }
+    }
+    .views-submit-button {
+      width: 20%;
+      input {
+        width: 100%;
+        font-size: 15px;
+        margin-top: 1.25em;
+        line-height: 1.18em;
+      }
+    }
+  }
+  @media #{$s} {
+    padding: 0;  
+  }
+}
+
+#views-exposed-form-news-page {
+  @media #{$not-small} {
+    .views-exposed-widgets > div {
+      margin: 0;
+      p {
+        display: none;
+      }
+    }
+    #edit-keys-wrapper {
+      width: 60%;
+    }
+    #edit-type-wrapper {
+      width: 20%;
+      select {
+        width: 91%;
+      }
+    }
+    .views-submit-button {
+      width: 20%;
+      input {
+        line-height: 1.15em;
+        margin-top: 2.58em;
+        width: 100%;
+      }
+    }
+  }
+  @media #{$s} {
+    .views-exposed-widgets {
+      br {
+        display: none;
+      }
+    }
+    .views-submit-button {
+      margin: 0;
+      padding: 0;
+      input {
+        width: 100%;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+.section-204996 .block .news-events-style,
+.section-210161 .block .news-events-style {
+  .image, .field-image {
+    @media #{$m} {
+      margin-bottom: 5px;
+      width: 100%;
+      max-width: 100%;
+    }
+    img {
+      @media #{$m} {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .default-image {
+      @media #{$m} {
+        display: none;
+      }
+    }
+  }  
+  h3 {
+    @media #{$m} {
+      clear: both;
+      font-size: 16px;
+    }
+  }
+}
+
+

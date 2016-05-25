@@ -1,0 +1,53 @@
+body.page-events #views-exposed-form-Events-page {
+  .views-widget-filter-keys {
+    width: 45%;
+    margin: 0;
+    input {
+      width: 90%;
+    }
+  }
+  #edit-start-date-wrapper,
+  #edit-end-date-wrapper
+   {
+    width: 20%;
+    margin: 0;
+    input {
+      width: 85%;
+    }
+  }
+  .views-submit-button {
+    margin: 0;
+    margin-right: 0;
+    width: 15%;
+    float: right;
+    padding: 0;
+  }
+  .form-submit {
+    width: 100%;
+    margin-top: 20px;
+
+  }
+}
+
+body.page-events-department .region-content {
+  h2 {
+    margin: 0 0 0.66em;
+  }
+  hr {
+    padding: 0;
+    border: none;
+    border-top: 2px solid #ccc;
+    color: #333;
+    text-align: center;
+    &:after {
+      background: white;
+      color: #888;
+      content: "♮";
+      display: inline-block;
+      font-size: 1.5em;
+      padding: 0 0.25em;
+      position: relative;
+      top: -9px;
+    }
+  }
+}

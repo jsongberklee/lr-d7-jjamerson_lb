@@ -1,0 +1,40 @@
+body.page-node-2230211.node-type-hybrid-homepagex {
+  .banner.slider {
+    .slide-link {
+      margin-top: 28px;
+    }
+  }
+  .region-sidebar-first #block-berklee-site-section-menu {
+    border-top: none;
+    h3 a {
+      color: transparent;
+      width: 0;
+      height: 0;
+      line-height: 0;
+      margin: 0;
+      padding: 0;
+      display: none;
+    }
+    ul.menu {
+      margin-top: 28px;
+    }
+  }
+
+  // These styles fix the space when profiles are removed //
+
+  .banner.slider .overlay {
+    height: 645px;
+    @media #{$l} {
+      height: 664px;
+    }
+  }
+  .row-4 {
+    top: 600px;
+    @media #{$l} {
+      top: 600px;
+    }
+    @media #{$m} {
+      top: 490px;
+    }
+  }
+}

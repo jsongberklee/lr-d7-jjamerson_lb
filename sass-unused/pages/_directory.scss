@@ -1,0 +1,545 @@
+body.page-directory {
+  background: url( #{$images}/backgrounds/berklee---construction-documentary-opacity-98.jpg) no-repeat;
+  h1#page-title {
+    font-family: $headline;
+    font-weight: normal;
+  }
+  #page-content > .subtitle {
+    font-family: $headline;
+    font-weight: 100;
+  }
+  .messages.status {
+    h3 {
+      margin-top: -17px;
+      background: #eee;
+      position: relative;
+      z-index: 10;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      text-shadow: none;
+      margin-bottom: 3px;
+      color: #666;
+    }
+  }
+  //403 page:
+  .directory-login-prompt {
+    @include setPageWidth();
+    min-height: 300px;
+    h3 {
+      font-size: 23px;
+      margin-bottom: 25px;
+    }
+  }
+  //front page:
+  .search-form[action="/directory"] {
+    border-top: 1px dotted #ccc;
+    & > div {
+      margin: 80px auto 140px;
+    }
+  }
+  form {
+    @media #{$s} {
+      padding: 0;
+    }
+  }
+  .search-form > div {
+    max-width: 800px;
+    padding-bottom: 5px;
+    @media #{$not-small} {
+      padding: 1em 0;
+    }
+    //background: url( #{$images}/textures/medium-noise4.png ) repeat #f5f5f5;
+    @media #{$s} {
+      width: 100%;
+      padding: 0;
+    }
+    .container-inline {
+      @include clearfix();
+      width: 100%;
+      position: relative;
+      margin-top: -17px;
+      margin-bottom: 12px;
+    }
+    span.directory-help,
+    span.directory-print {
+      float: left;
+      margin-right: 2%;
+      border-right: 1px solid #dde;
+      font-size: 12px;
+      @media #{$s} {
+        border-right: none;
+      }
+    }
+    span.directory-print {
+      @media #{$s} {
+        display: none;
+      }
+    }
+    span.directory-help {
+      margin-left: 67%;
+      width: 5%;
+      min-width: 30px;
+      @media #{$s} {
+        margin-left: 0;
+      }
+    }
+    span.directory-print {
+      width: 11%;
+      min-width: 72px;
+      @media #{$s} {
+        border-right: none;
+      }
+    }
+    fieldset#edit-advanced {
+      position: relative;
+      clear: both;
+      z-index: 1;
+      &.collapsed {
+        height: 0;
+      }  
+      @media #{$s} {
+        width: 100%;
+      }
+      .button {
+        float: right;
+        margin-right: 14px;
+        margin-top: 0;
+        margin-bottom: 0;
+        @media #{$s} {
+          margin-top: 20px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .clear.button {
+        background: #999;
+        width: 110px;
+        margin-top: 10px;
+        @media #{$s} {
+          clear: both;
+          margin-right: 0;
+        }
+      }
+      .pseudo-submit.button {
+        margin-right: 0;
+        margin-top: 10px;
+        text-align: center;
+        width: 78px;
+      }
+      .fieldset-wrapper {
+        @include clearfix();
+        //background: #f3f3f3;
+        margin-bottom: 0;
+        //padding: 12px;
+        //@include border-radius(4px);
+        //@include box-shadow(inset 0 0 3px #ccc);
+      }
+      legend .fieldset-legend {
+        position: absolute;
+        right: 0;
+        font-size: 12px;
+        margin-top: -1.5em;
+      }
+      input[type="text"] {
+        width: 98%;
+      }
+      select.form-select {
+        height: 30px;
+        padding: 2px;
+        width: 100%;
+      }
+      .form-item-first-name,
+      .form-item-last-name,
+      .form-item-last-name-mod {
+        float: left;
+        input {
+          width: 88%;
+        }
+      }
+      .form-item-first-name {
+        width: 48%;
+        input {
+          width: 93%;
+        }
+      }
+      .form-item-last-name {
+        width: 45%;
+      }
+      .form-item-last-name-mod {
+        width: 7%;
+        position: relative;
+        height: 0;
+        line-height: 0;
+        padding: 0;
+        margin: 0;
+        @media #{$s} {
+          display: none;
+        }
+        &:after {
+          @include icon('icon-caret-down', '#bbb');
+          display: block;
+          font-size: 13px;
+          position: absolute;
+          right: 9px;
+          top: 32px;
+          z-index: 0;
+        }
+        label {
+          display: none;
+        }
+        select {
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
+          background: #fafafa;
+          border-radius: 0 5px 5px 0;
+          border: 1px solid #ccc;
+          color: #777;
+          font-size: 12px;
+          line-height: 15px;
+          margin-left: -38px;
+          padding-left: 5px;
+          padding-top: 3px;
+          position: absolute;
+          text-indent: 0.01px;
+          text-overflow: '';
+          top: 20px;
+          width: 90px;
+        }
+      }
+      .form-item-job-title {
+        clear: both;
+      }
+      label {
+        color: #666;
+        font-family: $body;
+        font-size: 13px;
+        height: 20px;
+      }
+      .form-item-last-name {
+
+      }
+    }
+    div.form-item-keys {
+      float: left;
+      width: 90%;
+      input {
+        width: 95%;
+        border: 1px solid #bbb;
+      }
+    }
+    input#edit-submit {
+      float: right;
+      width: 10%;
+      margin-top: -1px;
+      @media #{$s} {
+        margin-top: 35px;
+        width: 100%;
+      }
+      &.advanced-open {
+        opacity: 0;
+        height: 0;
+        @media #{$s} {
+          margin: 0;
+        }
+      }
+    }
+    .directory-tooltip {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      color: #666;
+      font-size: 12px;
+    }
+  }
+  h2 {
+    border-top: 1px dotted #aaa;
+    margin: 20px 10px 15px 0;
+    padding-top: 15px;
+  }
+  .search-results {
+    font-size: 13px;
+    &:hover {
+      .additional-links, .actions {
+        opacity: 0.1;
+        @include transition(all 0.5s);
+      }
+    }
+    & > li {
+      @include clearfix();
+      border-bottom: 1px dotted #dde;
+      list-style-type: none;
+      margin: 0;
+      min-height: 65px;
+      font-family: $headline;
+      font-weight: normal;
+      padding: 3px 10px;
+      position: relative;
+      &:nth-child(even) {
+        @include box-shadow(inset 0 0 15px #f1f1f1);
+        background: #f9f9fe;
+      }
+      &.selected-for-report {
+        background: #def;
+      }
+      &:hover {
+        .additional-links, .actions {
+          @include transition(all 0.1s);
+          opacity: 0.7;
+          a {
+            &, &:before { color: $berklee-red; }
+          }
+        }
+        .department-url {
+        }
+      }
+    }
+    h3.title {
+      font-size: 15px;
+      font-family: $headline;
+      font-weight: bold;
+      max-width: 35%;
+      @media #{$s} {
+        max-width: 100%;
+      }
+    }
+    .title .value {
+      color: #666;
+      font-style: italic;
+      font-size: 13px;
+    }
+    .additional-links {
+      font-size: 11px;
+      opacity: 0; 
+      //-webkit-transition: all 0.3s;
+      @include transition(all 0.3s);
+      margin-left: 6px;
+      a {
+        margin-right: 6px;
+        margin-left: 6px;
+      }
+      /* looks cluttered:
+      @media #{$s} {
+        opacity: 0.7;
+      }
+      */
+    }
+    div.department-url {
+      font-size: 11px;
+      opacity: 0.7;
+    }
+    .phone, .fax, .the-internet-is-a-series-of-tubes, .building {
+      .value:before {
+        margin-right: 5px;
+        width: 15px;
+        margin-left: -20px;
+        display: inline-block;
+        @media #{$s} {
+        }
+      }
+    }
+    .phone, .fax, .the-internet-is-a-series-of-tubes {
+      @media #{$s} {
+        margin-left: 20px;
+      }
+    }
+    .phone .value {
+      &:before {
+        @include icon('icon-phone', '#cfd5d5');
+      }
+    }
+    .fax .value {
+      &:before {
+        @include icon('icon-print', '#cfd5d5');
+      }
+    }
+    .the-internet-is-a-series-of-tubes .value {
+      &:before {
+        @include icon('icon-envelope', '#cfd5d5');
+      } 
+    }
+    .general-info {
+      float: left;
+      max-width: 35%;
+      @media #{$s} {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .actions {
+      @include transition(all 0.3s);
+      //background: rgba(80,80,80,0.1);
+      border-radius: 2px;
+      border: 1px solid #ddd;
+      bottom: 2px;
+      font-size: 11px;
+      opacity: 0.3;
+      padding: 2px 9px 1px;
+      position: absolute;
+      right: 2px;
+      @media #{$s} {
+        display: none;
+      }
+      a {
+        color: #999;
+      }
+    }
+    .report-discrepancy {
+      padding-left: 25px;
+      &:before {
+        @include icon('icon-wrench', '#999');
+        margin-left: -25px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+    .label {
+      color: #666;
+      font-family: $headline;
+      font-weight: normal;
+    }
+    .badge {
+      @media #{$s} {
+        display: none;
+      }
+      @include border-radius(4px);
+      background: #69b;
+      margin-left: 6px;
+      opacity: 0.5;
+      padding: 0 0.5em;
+      a {
+        color: white;
+        font-weight: normal;
+        font-family: $body;
+        font-size: 11px;
+      }
+    }
+    .badge.Faculty {
+      background: #985;
+    }
+    li.department {
+    }
+    li.user {
+    }
+    li.directory-entry {
+    }
+    .contact-info {
+      left: 40%;
+      margin-top: 7px;
+      min-width: 320px;
+      position: absolute;
+      top: 0;
+      width: 60%;
+      @media #{$s} {
+        float: none;
+        left: 0;
+        margin-top: 12px;
+        position: relative;
+        width: 100%;
+      }
+    }
+    .through-wires-and-cables {
+      float: left;
+      max-width: 50%;
+      @media #{$s} {
+        float: none;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    .physical-location {
+      float: right;
+      width: 50%;
+      @media #{$s} {
+        margin-top: 12px;
+        float: none;
+        width: 100%;
+      }
+    }
+    .building {
+      @include clearfix();
+      overflow: visible;
+      .value:before {
+        width: 8px;
+        margin-left: -13px;
+        @include icon('icon-map-marker', '#cfd5d5');
+        @media #{$s} {
+          display: none;
+        }
+      }
+    }
+    .room, .mail-stop {
+      font-size: 12px;
+      .label {
+        color: #666;
+        font-weight: normal;
+        margin-right: 5px;
+      }
+      .value {
+        color: #555;
+      }
+    }
+    .mail-stop {
+      clear: both;
+    }
+  }
+  .feedback_simple {
+    @media #{$s} {
+      display: none;
+    }
+  }
+  .discrepancy-router-dialog {
+    @media #{$not-small} {
+      min-width: 420px;
+    }
+    .ui-dialog-titlebar {
+      @include border-radius(0px);
+      background: #eee;
+      border: none;
+      color: #555;
+      font-family: $headline;
+    }
+    p, a {
+      font-size: 13px;
+      font-family: $headline;
+      font-weight: normal;
+    }
+    a {
+      color: $berklee-red;
+    }
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    ul.action-links {
+      margin-bottom: 20px;
+      li {
+        padding: 2px 0;
+        &:before {
+          @include icon('icon-pencil-square-o', '#ddd');
+        }
+      }
+      li:not(:last-child) {
+        border-bottom: 1px dotted #ccc;
+      }
+      a {
+        padding: 4px;
+        &:focus {
+          outline: none;
+          text-decoration: none;
+          border-bottom: 1px dotted #fafafa;
+        }
+      }
+    }
+  }
+}
+
+body.page-directory-print {
+  // Suggest landscape orientation printing to browsers that listen:
+  // (reference: http://stackoverflow.com/questions/138422/landscape-printing-from-html )
+  @media print{ @page {size: landscape} }
+}
