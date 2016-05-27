@@ -4,8 +4,10 @@
  * Implementing hook_process_page()
  */
 function jjamerson_lb_preprocess_page(&$variables) {
-  $base_theme = 'jjamerson';
 
+	echo '<h1 style="font-size:100px;">SUBMODULE WORKS!!</h1>';
+
+  $base_theme = 'jjamerson';
   global $base_url, $base_path, $user;
   global $_bss_section_information;
 
