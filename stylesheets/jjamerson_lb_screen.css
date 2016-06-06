@@ -421,6 +421,7 @@ $s-width: 480px;
 **/
 .region-emergency-bar {
   background-color: #fff;
+  top: 0;
 }
 
 .mobileMenu.expanded {
