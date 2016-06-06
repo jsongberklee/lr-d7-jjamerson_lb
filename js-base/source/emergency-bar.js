@@ -37,14 +37,17 @@ jQuery(document).ready(function($){
       emergencyExpand.css('marginTop', '300px');
       emergencyExpand.css('opacity', 0.9);
       //rememberCollapsed('add', '|' + emergencyId);
+			check_emergency_cookie();
   	});
 
 		emergencyExpand.click(function() {
-	      $(this).css('opacity', 0);
-	      emergencyBar.css('marginTop', '0');
-	      // disabled due to compatibility (not available to use global base domain name "berklee.edu"
+	    $(this).css('opacity', 0);
+	    emergencyBar.css('marginTop', '0');
+	    
+			// disabled due to compatibility (not available to use global base domain name "berklee.edu"
 		  //rememberCollapsed('remove', emergencyId);
-		  $.cookie('mdev_emergency_duration', '', {path:'/', domain:'berklee.edu', expires: -1});
+		  
+			$.cookie('mdev_emergency_duration', '', {path:'/', domain:'berklee.edu', expires: -1});
 			//$.cookie('mdev_emergency_duration', '', {path:'/', domain:'lb.dev', expires: -1});
 		});
 
