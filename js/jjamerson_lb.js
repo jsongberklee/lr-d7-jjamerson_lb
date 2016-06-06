@@ -321,6 +321,24 @@ jQuery(document).ready(function($){
   }
 });
 jQuery(document).ready(function($){
+	// to memorized and keep the position of emergency bar.
+	var check_emergency_cookie = function(c){
+		var duration = 3600 * 3 * 1000; // 3 hours
+		//var duration = 60 * 1000; // for debugging
+		var targetStamp = $.cookie('mdev_emergency_duration');
+		var now = $.now();
+
+		if(targetStamp == null || targetStamp < now){
+			if(c==undefined){
+				$.cookie('mdev_emergency_duration', now+duration, {path:'/', domain:'berklee.edu'});
+				//$.cookie('mdev_emergency_duration', now+duration, {path:'/', domain:'lb.dev'}); // for debugging
+				console.debug("cookie reset-> "+ $.cookie('mdev_emergency_duration'));
+			}
+			return false;
+		}else{
+			return true;
+		}
+	};
   if ( $('body').hasClass('emergency') ){
     var classes = $('body').attr('class').split(' ');
     for (i = 0; i < classes.length; i++) {
@@ -340,11 +358,21 @@ jQuery(document).ready(function($){
       emergencyExpand.css('opacity', 0.9);
       rememberCollapsed('add', '|' + emergencyId);
     });
-    emergencyExpand.click(function() {
+    
+	emergencyExpand.click(function() {
       $(this).css('opacity', 0);
       emergencyBar.css('marginTop', '0');
       rememberCollapsed('remove', emergencyId);
+	  $.cookie('mdev_emergency_duration', '', {path:'/', domain:'berklee.edu', expires: -1});
     });
+	
+	// the bar remains as closed
+	if(check_emergency_cookie('loaded') == true){
+		emergencyBar.css('marginTop', '-300px');
+		emergencyExpand.css('marginTop', '300px');
+		emergencyExpand.css('opacity', 0.9);
+	}
+	
     if (typeof(Storage) != undefined && localStorage != null && emergencyId != undefined) {
       var isCollapsed = rememberCollapsed('check', emergencyId );
       if (isCollapsed > -1) {
