@@ -341,7 +341,7 @@ jQuery(document).ready(function($){
   /* disabled due to compatibility (not available to use global base domain name "berklee.edu"
 	if ( $('body').hasClass('emergency') ){
     var classes = $('body').attr('class').split(' ');
-	console.log("classes-> "+classes);
+		console.log("classes-> "+classes);
     for (i = 0; i < classes.length; i++) {
       if (classes[i].indexOf('emergency-id') > -1) {
         var emergencyId = classes[i];
@@ -353,11 +353,12 @@ jQuery(document).ready(function($){
     var emergencyBar = $(this);
     var emergencyExpand = $('span.expand-button', this);
     $(this).css('marginTop', '0px');
-    $('.container', this).click(function() {
+    
+		$('.container', this).click(function() {
       emergencyBar.css('marginTop', '-300px');
       emergencyExpand.css('marginTop', '300px');
       emergencyExpand.css('opacity', 0.9);
-      rememberCollapsed('add', '|' + emergencyId);
+      //rememberCollapsed('add', '|' + emergencyId);
   	});
 
 		emergencyExpand.click(function() {
@@ -366,6 +367,7 @@ jQuery(document).ready(function($){
 	      // disabled due to compatibility (not available to use global base domain name "berklee.edu"
 		  //rememberCollapsed('remove', emergencyId);
 		  $.cookie('mdev_emergency_duration', '', {path:'/', domain:'berklee.edu', expires: -1});
+			//$.cookie('mdev_emergency_duration', '', {path:'/', domain:'lb.dev', expires: -1});
 		});
 
 		// the bar remains as closed
@@ -375,7 +377,7 @@ jQuery(document).ready(function($){
 			emergencyExpand.css('opacity', 0.9);
 		}
 
-	/* disabled due to compatibility (not available to use global base domain name "berklee.edu"
+		/* disabled due to compatibility (not available to use global base domain name "berklee.edu"
     if (typeof(Storage) != undefined && localStorage != null && emergencyId != undefined) {
       var isCollapsed = rememberCollapsed('check', emergencyId );
       if (isCollapsed > -1) {
