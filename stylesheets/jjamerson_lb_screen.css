@@ -1380,8 +1380,11 @@ form.is-useful-form select {
 
 .views-exposed-widgets > div {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
   margin-right: 10px;
+}
+.views-exposed-widgets .views-submit-button, .views-exposed-widgets .views-reset-button {
+  margin-top: 8px;
 }
 
 /* MEDIA QUERIES FOR RESPONSIVE ***************************/
