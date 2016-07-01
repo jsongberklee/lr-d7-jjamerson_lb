@@ -1,6 +1,5 @@
 jQuery(document).ready(function(){
-
-	// display each front block description on mouseover
+// display each front block description on mouseover
 /*
 	jQuery('.front-block .each-block-description').mouseenter(function(){
 		var $this = jQuery(this);
@@ -17,7 +16,6 @@ jQuery(document).ready(function(){
 		console.log('mounseleave');
 	});
 */
-
 	jQuery('.front-block').hover(
 		function(){
 			var $this = jQuery(this);
@@ -29,6 +27,12 @@ jQuery(document).ready(function(){
 			$this.find('.each-block-description').stop().fadeIn(0).fadeOut(50);
 		}
 	);
-
-
+});
+/*
+Swap the logo to the mobile version 
+*/
+jQuery(window).bind("ready resize",function(e){
+	var $bcmW = jQuery(e.target).width();
+	if($bcmW < 768) jQuery('#logo>img').attr('src', '//lrweb.berklee.edu/sites/all/themes/jjamerson_lb/logo-lb-mobile.png');
+	else jQuery('#logo>img').attr('src', '//lrweb.berklee.edu/sites/all/themes/jjamerson_lb/logo.png');
 });
