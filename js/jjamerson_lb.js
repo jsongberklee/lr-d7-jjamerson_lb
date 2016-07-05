@@ -1888,7 +1888,7 @@ jQuery(document).ready(function(){
 Swap the logo to the mobile version 
 */
 jQuery(window).bind("load resize",function(e){
-	if(jQuery(e.target).width() < 768) jQuery('#logo>img').attr('src', '//lrweb.berklee.edu/sites/all/themes/jjamerson_lb/logo-lb-mobile.png');
+	if(jQuery(e.target).width() < 768) jQuery('#logo>img').attr('src', '//lrweb.berklee.edu/sites/all/themes/jjamerson_lb/logo-lb-mobile.svg');
 	else jQuery('#logo>img').attr('src', '//lrweb.berklee.edu/sites/all/themes/jjamerson_lb/logo.png');
 });
 jQuery(document).ready(function($){
