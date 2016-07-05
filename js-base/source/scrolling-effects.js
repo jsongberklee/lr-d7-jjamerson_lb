@@ -106,7 +106,7 @@ jQuery(document).ready(function($){
     }, 100
   );
   
-  $("a[href*=#]").click(function() {
+  $("a[href*=\\#]").click(function() {
     var href = $(this).attr('href');
     if ( $(href).length ) {
       var target = $(href);
