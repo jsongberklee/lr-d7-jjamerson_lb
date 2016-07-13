@@ -141,7 +141,7 @@ function jjamerson_lb_preprocess_page(&$variables) {
     $variables['theme_hook_suggestions'][] = 'page__404';
   }
 
-  /* Place logo: */
+  /* Place logo: * REMOVED BY JSONG
   if ( isset($_GET['render-only']) && isset($_GET['unlink-logo']) ) {
     $logo = "<img src='{$variables['logo']}' alt='Berklee logo' id='logo'>";
   } else {
@@ -185,6 +185,7 @@ function jjamerson_lb_preprocess_page(&$variables) {
   if ( isset($variables['page']['header']) && is_array($variables['page']['header']) ) {
     $variables['page']['header'] = $logo_array + $variables['page']['header']; //+ $share_links; // by jsong, it makes the site slow sometimes
   }
+	/* END Place logo: */
 
   /* Add a pretitle page variable, primarily for the sponsorship field */
   $variables['pretitle'] = '';
