@@ -1374,7 +1374,8 @@ jQuery(document).ready(function($){
       $('#video-play-pause-button').click();  
     }
     $("#off-screen-sidebar").toggleClass('closed open');
-    $('#block-system-main-menu nav li:first-child a').focus();
+		//commented by jsong, due to having focus on odd place
+    //$('#block-system-main-menu nav li:first-child a').focus();
     return false;
   });
 
