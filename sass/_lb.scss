@@ -1028,6 +1028,14 @@ form.is-useful-form{
 	}
 }
 
+.page-weeded-item-list{
+	.views-exposed-form{
+		label{
+			display:block;
+		}
+	}
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE ***************************/
 /** layout variables
 $huge:'(min-width:1600px)';

@@ -1387,6 +1387,10 @@ form.is-useful-form select {
   margin-top: 8px;
 }
 
+.page-weeded-item-list .views-exposed-form label {
+  display: block;
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE ***************************/
 /** layout variables
 $huge:'(min-width:1600px)';
