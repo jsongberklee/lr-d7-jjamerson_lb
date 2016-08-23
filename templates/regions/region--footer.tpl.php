@@ -5,7 +5,6 @@
         <?php print $content; ?>
       </nav>
       <div class="footer-block">
-          <span class="copy">Copyright &copy; <?php echo date('Y'); ?></span>
           <ul class="bar">
 				    <li><a href="/about-us/services/interlibrary-loan-request-form">Interlibrary Loan Request</a></li>
 				    <li><a href="http://ask.library.berklee.edu/widget_standalone.php?la_widget_id=3283" target="_blank">Ask A Librarian</a></li>
@@ -16,7 +15,8 @@
 					<li><a href="http://learningcenter.berklee.edu/">Learning Center</a></li>
 					<li><a href="http://learningcenter.berklee.edu/Core_Music_Tutoring/">Tutoring Services</a></li>
 				  </ul>
-        </div>
+					<div class="copy">Copyright &copy; <?php echo date('Y'); ?></div>
+      </div>
     </div>
   </section>
 <?php endif; ?>

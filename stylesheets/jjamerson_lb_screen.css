@@ -563,6 +563,23 @@ body.front .region-content-top {
 body.front .front-block {
   display: inline-block;
   vertical-align: top;
+  /* old colors
+  &.top-resources{background-color:#635c60;}
+  &.services{background-color:#d2af6e;}
+  &.class-reserves{background-color:#c793c0;}
+  &.az-list{background-color:#ada143;}
+  &.av-streaming{background-color:#e47b75;}
+  &.archives{background-color:#8b647f;}
+  &.tbc-library{background-color:#76996C;}
+  &.acquisitions{background-color:#CD553D;}
+  &.displays{background-color:#84a9d2;}
+  &.periodicals{background-color:#76a2a9;}
+  &.faq-jump, &.faq{background-color:#7A8277;}
+  &.libguides{background-color:#16ac96;}
+  &.search-catalog{background-color:#25353c;}
+  &.search-leadsheet, &.leadsheet{background-color:#4c5960;}
+  &.ill-request{background-color:#078baa;}
+  */
 }
 body.front .front-block a {
   display: block;
@@ -734,56 +751,38 @@ body.front .front-block.instagram .content .valign-helper, body.front .front-blo
   vertical-align: middle;
   height: 100%;
 }
-body.front .front-block.top-resources {
-  background-color: #635c60;
-}
-body.front .front-block.open-hours {
-  background-color: #d2af6e;
-}
-body.front .front-block.libguides {
-  background-color: #c793c0;
-}
-body.front .front-block.az-list {
-  background-color: #ada143;
-}
-body.front .front-block.av-streaming {
-  background-color: #e47b75;
-}
-body.front .front-block.archives {
-  background-color: #8b647f;
-}
-body.front .front-block.services {
-  background-color: #76996C;
-}
-body.front .front-block.acquisitions {
-  background-color: #CD553D;
-}
-body.front .front-block.displays {
-  background-color: #84a9d2;
-}
-body.front .front-block.periodicals {
-  background-color: #76a2a9;
-}
-body.front .front-block.faq-jump, body.front .front-block.faq {
-  background-color: #7A8277;
-}
-body.front .front-block.course-reserve {
-  background-color: #16ac96;
-}
 body.front .front-block.search-catalog {
   background-color: #25353c;
 }
-body.front .front-block.search-leadsheet, body.front .front-block.leadsheet {
+body.front .front-block.top-resources, body.front .front-block.tbc-library, body.front .front-block.search-leadsheet, body.front .front-block.leadsheet {
   background-color: #4c5960;
+}
+body.front .front-block.class-reserves {
+  background-color: #8d44ad;
+}
+body.front .front-block.libguides, body.front .front-block.az-list, body.front .front-block.av-streaming {
+  background-color: #5c8d23;
+}
+body.front .front-block.services, body.front .front-block.faq-jump, body.front .front-block.faq {
+  background-color: #168ccb;
+}
+body.front .front-block.archives {
+  background-color: #f37338;
+}
+body.front .front-block.acquisitions, body.front .front-block.periodicals {
+  background-color: #CD553D;
+}
+body.front .front-block.displays {
+  background-color: #fdbc32;
 }
 body.front .front-block.ill-request {
   background-color: #078baa;
 }
-body.front .front-block.displays, body.front .front-block.acquisitions, body.front .front-block.archives, body.front .front-block.open-hours, body.front .front-block.libguides, body.front .front-block.az-list, body.front .front-block.av-streaming, body.front .front-block.services, body.front .front-block.periodicals, body.front .front-block.course-reserve, body.front .front-block.search-leadsheet, body.front .front-block.leadsheet, body.front .front-block.ill-request {
+body.front .front-block.displays, body.front .front-block.acquisitions, body.front .front-block.archives, body.front .front-block.services, body.front .front-block.class-reserves, body.front .front-block.az-list, body.front .front-block.av-streaming, body.front .front-block.tbc-library, body.front .front-block.periodicals, body.front .front-block.libguides, body.front .front-block.search-leadsheet, body.front .front-block.leadsheet, body.front .front-block.ill-request {
   height: 98px;
   position: relative;
 }
-body.front .front-block.displays a, body.front .front-block.acquisitions a, body.front .front-block.archives a, body.front .front-block.open-hours a, body.front .front-block.libguides a, body.front .front-block.az-list a, body.front .front-block.av-streaming a, body.front .front-block.services a, body.front .front-block.periodicals a, body.front .front-block.course-reserve a, body.front .front-block.search-leadsheet a, body.front .front-block.leadsheet a, body.front .front-block.ill-request a {
+body.front .front-block.displays a, body.front .front-block.acquisitions a, body.front .front-block.archives a, body.front .front-block.services a, body.front .front-block.class-reserves a, body.front .front-block.az-list a, body.front .front-block.av-streaming a, body.front .front-block.tbc-library a, body.front .front-block.periodicals a, body.front .front-block.libguides a, body.front .front-block.search-leadsheet a, body.front .front-block.leadsheet a, body.front .front-block.ill-request a {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -844,7 +843,7 @@ body.front .front-block:not(.twitter-feed):hover {
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-body.front .front-block.displays:hover, body.front .front-block.acquisitions:hover, body.front .front-block.archives:hover, body.front .front-block.course-reserve:hover, body.front .front-block.open-hours:hover, body.front .front-block.libguides:hover, body.front .front-block.az-list:hover, body.front .front-block.av-streaming:hover, body.front .front-block.services:hover, body.front .front-block.periodicals:hover, body.front .front-block.leadsheet:hover, body.front .front-block.ill-request:hover {
+body.front .front-block.displays:hover, body.front .front-block.acquisitions:hover, body.front .front-block.archives:hover, body.front .front-block.libguides:hover, body.front .front-block.services:hover, body.front .front-block.class-reserves:hover, body.front .front-block.az-list:hover, body.front .front-block.av-streaming:hover, body.front .front-block.tbc-library:hover, body.front .front-block.periodicals:hover, body.front .front-block.leadsheet:hover, body.front .front-block.ill-request:hover {
   background-color: #7b8b96;
   cursor: pointer;
 }
@@ -1250,6 +1249,21 @@ a.views-more-link:after {
   background: none !important;
   background-image: none;
 }
+#block-weekhours-weekhours td,
+#block-views-7e6636293d157944927a06d5285fffdd td {
+  color: #e8e8e8;
+  padding: 0 1em 1em 1em;
+  font-size: 1em;
+}
+
+#block-weekhours-weekhours .even-weekhours,
+#block-weekhours-weekhours .odd-weekhours {
+  background-color: none;
+}
+#block-weekhours-weekhours .create-specialday a,
+#block-weekhours-weekhours .weekhour-edit a {
+  color: #333;
+}
 
 #block-views-5c212d6e2e5108621a90e526b92eee12 .view-id-faq_library_jump_menu .view-content, #block-views-5c212d6e2e5108621a90e526b92eee12 .view-id-faq_library_jump_menu .view-footer {
   display: inline-block;
@@ -1308,12 +1322,12 @@ form.is-useful-form select {
   display: none;
 }
 
-.more-link.services {
+.more-link.tbc-library {
   text-align: center;
   margin: 24px 0;
   height: auto;
 }
-.more-link.services a {
+.more-link.tbc-library a {
   margin: 6px;
   float: none;
   display: inline-block;
@@ -1417,11 +1431,15 @@ $s-width: 480px;
     width: 50%;
     display: inline-block;
     vertical-align: top;
+    padding: 2em;
   }
-  #block-weekhours-weekhours, #block-weekhours-weekhours .content,
-  #block-views-7e6636293d157944927a06d5285fffdd,
+  #block-weekhours-weekhours .content,
   #block-views-7e6636293d157944927a06d5285fffdd .content {
-    padding: 12px;
+    padding-top: 0;
+  }
+
+  .region-footer div.copy {
+    float: right;
   }
 }
 @media (max-width: 767px) {
@@ -1455,6 +1473,31 @@ $s-width: 480px;
   }
   #block-menu-menu-menu-login-menu i {
     font-style: inherit;
+  }
+
+  .region-footer nav.footer-menus {
+    display: block;
+  }
+  .region-footer .footer-block {
+    width: 97%;
+    padding: 0;
+    margin: 2em 0;
+  }
+  .region-footer .footer-block li {
+    float: none;
+  }
+  .region-footer .footer-block div.copy {
+    margin-top: 2em;
+    float: none;
+  }
+  .region-footer #block-weekhours-weekhours,
+  .region-footer #block-views-7e6636293d157944927a06d5285fffdd {
+    margin-top: 2em;
+  }
+  .region-footer #block-weekhours-weekhours td, .region-footer #block-weekhours-weekhours h3,
+  .region-footer #block-views-7e6636293d157944927a06d5285fffdd td,
+  .region-footer #block-views-7e6636293d157944927a06d5285fffdd h3 {
+    line-height: 1.5;
   }
 }
 @media (min-width: 1200px) and (max-width: 1320px) {
@@ -1588,10 +1631,10 @@ $s-width: 480px;
   body.front .front-block.search-catalog {
     width: 48%;
   }
-  body.front .front-block.az-list, body.front .front-block.av-streaming, body.front .front-block.top-resources, body.front .front-block.libguides, body.front .front-block.leadsheet {
+  body.front .front-block.az-list, body.front .front-block.av-streaming, body.front .front-block.top-resources, body.front .front-block.class-reserves, body.front .front-block.leadsheet {
     width: 23%;
   }
-  body.front .front-block.services {
+  body.front .front-block.tbc-library {
     width: 39%;
   }
   body.front .front-block.periodicals {
@@ -1600,13 +1643,13 @@ $s-width: 480px;
   body.front .front-block.archives {
     width: 32%;
   }
-  body.front .front-block.course-reserve {
+  body.front .front-block.libguides {
     width: 30%;
   }
   body.front .front-block.faq-jump {
     width: 32%;
   }
-  body.front .front-block.open-hours, body.front .front-block.ill-request {
+  body.front .front-block.services, body.front .front-block.ill-request {
     width: 32%;
   }
   body.front .front-block.instagram, body.front .front-block.twitter, body.front .front-block.facebook {
@@ -1743,4 +1786,10 @@ $s-width: 480px;
     font-size: 16px;
     padding: 8px 12px;
   }
+}
+/* GreenGrass views page CSS: ********************************
+ * duplecated CSS add here to make it work on 3rd party sites
+ *************************************************************/
+.gg-stat-yes td:nth-child(n+2):nth-child(-n+6) {
+  text-decoration: line-through;
 }

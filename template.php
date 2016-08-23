@@ -110,12 +110,12 @@ function jjamerson_lb_preprocess_page(&$variables) {
 				var $bcmW = jQuery(e.target).width();
 				if($bcmW > 767){
 					var $t = jQuery(".front-block.top-resources");
-					var $a = jQuery(".front-block.services");
+					var $a = jQuery(".front-block.tbc-library");
 					var $th = (($a.outerHeight() + $a.offset().top) - $t.offset().top)+"px";
 					$t.height($th);
 				}else if(($bcmW < 767) && ($bcmW > 479)){
 					var $t = jQuery(".front-block.top-resources");
-					var $a = jQuery(".front-block.libguides");
+					var $a = jQuery(".front-block.class-reserves");
 					var $th = (($a.outerHeight() + $a.offset().top) - $t.offset().top)+"px";
 					$t.height($th);
 				}else if($bcmW < 479){
