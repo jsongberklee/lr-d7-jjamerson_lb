@@ -754,7 +754,10 @@ body.front .front-block.instagram .content .valign-helper, body.front .front-blo
 body.front .front-block.search-catalog {
   background-color: #25353c;
 }
-body.front .front-block.top-resources, body.front .front-block.tbc-library, body.front .front-block.search-leadsheet, body.front .front-block.leadsheet {
+body.front .front-block.top-resources {
+  background-color: #f37338;
+}
+body.front .front-block.tbc-library, body.front .front-block.search-leadsheet, body.front .front-block.leadsheet {
   background-color: #4c5960;
 }
 body.front .front-block.class-reserves {
@@ -764,16 +767,16 @@ body.front .front-block.libguides, body.front .front-block.az-list, body.front .
   background-color: #5c8d23;
 }
 body.front .front-block.services, body.front .front-block.faq-jump, body.front .front-block.faq {
-  background-color: #168ccb;
+  background-color: #146298;
 }
 body.front .front-block.archives {
-  background-color: #f37338;
+  background-color: #ae132a;
 }
 body.front .front-block.acquisitions, body.front .front-block.periodicals {
   background-color: #CD553D;
 }
 body.front .front-block.displays {
-  background-color: #fdbc32;
+  background-color: #ef9b0f;
 }
 body.front .front-block.ill-request {
   background-color: #078baa;
@@ -1746,21 +1749,18 @@ $s-width: 480px;
 /* feedback_simple module CSS: ********************************
  * duplecated CSS add here to make it work on 3rd party sites
  *************************************************************/
-#feedback_simple a {
+#feedback_simple a.side-tab-feedback_simple {
   cursor: pointer;
   display: block;
   overflow: hidden;
   position: fixed;
   text-decoration: none !important;
   z-index: 9999;
-}
-
-.side-tab-feedback_simple {
   display: block;
-  background-color: rgba(238, 36, 60, 0.85);
+  background-color: rgba(0, 0, 0, 0.75);
   right: -66px;
   padding: 12px 16px;
-  color: #fff !important;
+  color: #e8e8e8 !important;
   letter-spacing: 1px;
   font-size: 18px !important;
   line-height: 16px !important;
@@ -1773,10 +1773,9 @@ $s-width: 480px;
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-.side-tab-feedback_simple:hover {
+#feedback_simple a.side-tab-feedback_simple:hover {
   color: #fff !important;
-  background-color: #ee243c;
+  background-color: black;
   border-radius: 18px 18px 0 0;
   -moz-border-radius: 18px 18px 0 0;
   -webkit-border-radius: 18px 18px 0 0;
