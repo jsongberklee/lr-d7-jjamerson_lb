@@ -622,19 +622,9 @@ body.front .front-block .each-block-description {
   -webkit-border-bottom-left-radius: 30px;
   -moz-border-radius-bottomleft: 30px;
   border-bottom-left-radius: 30px;
-  background: -webkit-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
-  background: -o-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
-  background: -moz-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
-  background: linear-gradient(to right, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
   display: none;
   justify-content: flex-end;
   align-items: flex-end;
-}
-body.front .front-block.top-resources .each-block-description {
-  background: -webkit-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
-  background: -o-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
-  background: -moz-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
-  background: linear-gradient(to right, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
 }
 body.front .front-block.search-catalog .btn-libguides, body.front .front-block.search-leadsheet .btn-libguides {
   display: none;
@@ -692,6 +682,7 @@ body.front .front-block.featured .flexslider {
 }
 body.front .front-block.faq-jump {
   height: 98px;
+  position: relative;
 }
 body.front .front-block.faq-jump .view {
   text-align: left;
@@ -709,9 +700,6 @@ body.front .front-block.faq-jump .view .view-footer {
 body.front .front-block.faq-jump select {
   width: 100%;
 }
-body.front .front-block.faq-jump {
-  position: relative;
-}
 body.front .front-block.faq-jump a {
   position: absolute;
   bottom: 0;
@@ -721,13 +709,6 @@ body.front .front-block.faq-jump a {
 }
 body.front .front-block.faq-jump a i {
   font-size: 44px;
-}
-body.front .front-block.easter-egg {
-  height: 98px;
-  -webkit-border-radius: 49px;
-  -moz-border-radius: 49px;
-  border-radius: 49px;
-  visibility: hidden;
 }
 body.front .front-block.instagram, body.front .front-block.twitter, body.front .front-block.facebook {
   height: 98px;
@@ -754,9 +735,6 @@ body.front .front-block.instagram .content .valign-helper, body.front .front-blo
 body.front .front-block.search-catalog {
   background-color: #25353c;
 }
-body.front .front-block.top-resources {
-  background-color: #f37338;
-}
 body.front .front-block.tbc-library, body.front .front-block.search-leadsheet, body.front .front-block.leadsheet {
   background-color: #4c5960;
 }
@@ -772,7 +750,7 @@ body.front .front-block.services, body.front .front-block.faq-jump, body.front .
 body.front .front-block.archives {
   background-color: #ae132a;
 }
-body.front .front-block.acquisitions, body.front .front-block.periodicals {
+body.front .front-block.top-resources, body.front .front-block.acquisitions, body.front .front-block.periodicals {
   background-color: #CD553D;
 }
 body.front .front-block.displays {
@@ -847,8 +825,10 @@ body.front .front-block:not(.twitter-feed):hover {
   border-bottom-left-radius: 30px;
 }
 body.front .front-block.displays:hover, body.front .front-block.acquisitions:hover, body.front .front-block.archives:hover, body.front .front-block.libguides:hover, body.front .front-block.services:hover, body.front .front-block.class-reserves:hover, body.front .front-block.az-list:hover, body.front .front-block.av-streaming:hover, body.front .front-block.tbc-library:hover, body.front .front-block.periodicals:hover, body.front .front-block.leadsheet:hover, body.front .front-block.ill-request:hover {
-  background-color: #7b8b96;
   cursor: pointer;
+}
+body.front .front-block.displays:hover a, body.front .front-block.acquisitions:hover a, body.front .front-block.archives:hover a, body.front .front-block.libguides:hover a, body.front .front-block.services:hover a, body.front .front-block.class-reserves:hover a, body.front .front-block.az-list:hover a, body.front .front-block.av-streaming:hover a, body.front .front-block.tbc-library:hover a, body.front .front-block.periodicals:hover a, body.front .front-block.leadsheet:hover a, body.front .front-block.ill-request:hover a {
+  opacity: 0.1;
 }
 body.front .front-block:active {
   background-color: #ee243c;
@@ -1768,17 +1748,17 @@ $s-width: 480px;
   font-weight: bold;
   padding: 20px 16px 0 16px;
   background: none;
-  text-shadow: 0px 0px 3px rgba(50, 50, 50, 0.75);
-  color: #003a65 !important;
+  text-shadow: 0px 0px 1px rgba(50, 50, 50, 0.75);
+  color: #0774bf !important;
   letter-spacing: 0;
 }
 #feedback_simple a.side-tab-feedback_simple:hover {
-  color: #ff0000 !important;
+  color: #0094fb !important;
   background: none;
 }
 #feedback_simple a.side-tab-feedback_simple i.fa-commenting {
   position: relative;
-  color: #ff0000;
+  color: #0094fb;
 }
 
 @media (min-width: 768px) {

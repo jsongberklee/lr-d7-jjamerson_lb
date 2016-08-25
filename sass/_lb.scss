@@ -209,10 +209,10 @@ body.front {
 	    //border-top-right-radius: 30px;
 	    border-bottom-left-radius: 30px;
 
-			background: -webkit-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
-			background: -o-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
-			background: -moz-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
-			background: linear-gradient(to right, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
+			//background: -webkit-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
+//			background: -o-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
+//			background: -moz-linear-gradient(left, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
+//			background: linear-gradient(to right, rgba(123, 139, 150, 0), rgba(123, 139, 150, 0.9));
 
 	    display:none;
 	    //display: flex;
@@ -221,13 +221,14 @@ body.front {
 	    //opacity: 0;
 		}
 		&.top-resources .each-block-description{
-		  background: -webkit-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
-			background: -o-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
-			background: -moz-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
-			background: linear-gradient(to right, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
+		  //background: -webkit-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
+//			background: -o-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
+//			background: -moz-linear-gradient(left, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
+//			background: linear-gradient(to right, rgba(99, 92, 96, 0), rgba(99, 92, 96, 0.9));
 	  }
 
-		&.search-catalog, &.search-leadsheet{
+		&.search-catalog,
+		&.search-leadsheet{
 
 			.btn-libguides{display:none;}
 
@@ -297,6 +298,7 @@ body.front {
 
 		&.faq-jump{
 			height:98px;
+			position: relative;
 
 			.view{
 				text-align:left;
@@ -313,55 +315,14 @@ body.front {
 					width:14%;
 				}
 			}
+
 			select{width:100%;}
-			//i.fa{color:#eee;}
-
-		}
-
-		&.az-list,
-		&.av-streaming,
-		&.top-resources,
-		&.class-reserves,
-		&.leadsheet{
-			//width:23%;
-		}
-
-		&.periodicals{
-			//width:31%;
-		}
-		&.ill-request{
-			//width:28%;
-		}
-
-		&.services{
-			//width:10%;
-		}
-
-		//&.faq,
-		//&.blog,
-
-		&.tbc-library{
-			//width:36%;
-		}
-
-		&.faq-jump{
-			position: relative;
-
+			
 			a{
 				position:absolute; bottom:0; right:0; padding: 0 12px 12px 0;
 				width: 50px;
 				i{font-size: 44px;}
 			}
-
-		}
-
-		&.easter-egg{
-			//width:7%;
-			height:98px;
-			-webkit-border-radius:49px;
-			-moz-border-radius:49px;
-			border-radius:49px;
-			visibility: hidden;
 		}
 
 		&.instagram,
@@ -397,10 +358,6 @@ body.front {
 
 		}
 
-		&.libguides{
-			//width:26%;
-		}
-
 		/* old colors
 		&.top-resources{background-color:#635c60;}
 		&.services{background-color:#d2af6e;}
@@ -423,7 +380,7 @@ body.front {
 		
 		&.search-catalog{background-color:#25353c;}
 
-		&.top-resources{background-color:#f37338;}
+		//&.top-resources{background-color:#f37338;}
 		
 		&.tbc-library,
 		&.search-leadsheet, &.leadsheet{background-color:#4c5960;}
@@ -440,6 +397,7 @@ body.front {
 				
 		&.archives{background-color:#ae132a;}
 
+		&.top-resources,
 		&.acquisitions,
 		&.periodicals{background-color:#CD553D;}
 		
@@ -514,6 +472,7 @@ body.front {
 			-moz-border-radius-bottomleft:30px;
 			border-top-right-radius:30px;
 			border-bottom-left-radius:30px;
+			
 		}
 
 		&.displays:hover,
@@ -528,8 +487,9 @@ body.front {
 		&.periodicals:hover,
 		&.leadsheet:hover,
 		&.ill-request:hover{
-			background-color:#7b8b96;
+			//background-color:#7b8b96;
 			cursor: pointer;
+			a{opacity:0.1;}
 		}
 
 		&:active{background-color:#ee243c;}
@@ -1594,12 +1554,12 @@ $s-width: 480px;
 		font-weight: bold;
 		padding: 20px 16px 0 16px;
 		background:none;
-		text-shadow: 0px 0px 3px rgba(50, 50, 50, 0.75);
-		color: #003a65 !important;
+		text-shadow: 0px 0px 1px rgba(50, 50, 50, 0.75);
+		color: #0774bf !important;
 		letter-spacing:0;
 		
 		&:hover{
-			color: #ff0000 !important;
+			color: #0094fb !important;
 			//background-color: rgba(238, 36, 60, 1);
 			//background-color: rgba(30, 30, 30, 1);
 			//border-radius: 18px 18px 0 0;
@@ -1610,7 +1570,7 @@ $s-width: 480px;
 		}
 		i.fa-commenting{
 			position: relative;
-			color: #ff0000;
+			color: #0094fb;
 		}
 	}
 	
