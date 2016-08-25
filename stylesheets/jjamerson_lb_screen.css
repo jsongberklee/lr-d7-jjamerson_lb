@@ -1748,22 +1748,23 @@ $s-width: 480px;
   font-weight: bold;
   padding: 20px 16px 0 16px;
   background: none;
-  text-shadow: 0px 0px 1px rgba(50, 50, 50, 0.75);
-  color: #0774bf !important;
+  text-shadow: 0px 0px 10px #000, 0px 0px 10px #000;
+  color: #fff !important;
   letter-spacing: 0;
+  -webkit-text-stroke: 1px;
 }
 #feedback_simple a.side-tab-feedback_simple:hover {
-  color: #0094fb !important;
+  color: #d7fbd8 !important;
   background: none;
 }
 #feedback_simple a.side-tab-feedback_simple i.fa-commenting {
   position: relative;
-  color: #0094fb;
 }
 
 @media (min-width: 768px) {
   a.side-tab-feedback_simple {
-    right: -122px;
+    top: 204px;
+    right: -137px;
     font-size: 30px !important;
     padding: 8px 12px;
   }
@@ -1774,7 +1775,8 @@ $s-width: 480px;
 }
 @media (max-width: 767px) {
   a.side-tab-feedback_simple {
-    right: -100px;
+    top: 384px;
+    right: -112px;
     font-size: 24px !important;
     padding: 8px 12px;
   }
