@@ -1567,8 +1567,7 @@ $s-width: 480px;
  * duplecated CSS add here to make it work on 3rd party sites
  *************************************************************/
 #feedback_simple{
-	a.side-tab-feedback_simple
-	{
+	a.side-tab-feedback_simple{
 	  cursor: pointer;
 	  display: block;
 	  overflow: hidden;
@@ -1578,12 +1577,11 @@ $s-width: 480px;
 		display:block;
 		//background-color: rgba(238, 36, 60, 0.85);
 		//background-color: rgba(30, 30, 30, 0.75);
-		right: -124px;
+
 		//padding: 10px 16px;
 		//color: #ffd202 !important;
 		//color: #fff !important;
-		color: #006699 !important;
-		font-size: 30px !important;
+
 		//line-height: 16px !important;
 		-webkit-transform: rotate(-90deg);
 		-moz-transform: rotate(-90deg);
@@ -1594,9 +1592,11 @@ $s-width: 480px;
 		-moz-box-shadow: none;
 		box-shadow: none;
 		font-weight: bold;
-		
+		padding: 20px 16px 0 16px;
 		background:none;
 		text-shadow: 0px 0px 3px rgba(50, 50, 50, 0.75);
+		color: #003a65 !important;
+		letter-spacing:0;
 		
 		&:hover{
 			color: #ff0000 !important;
@@ -1608,15 +1608,37 @@ $s-width: 480px;
 			
 			background:none;
 		}
+		i.fa-commenting{
+			position: relative;
+			color: #ff0000;
+		}
 	}
 	
 }
-@media (max-width: 767px) {
-	.side-tab-feedback_simple{
-		font-size: 16px;
+@media #{$not-small}{
+	a.side-tab-feedback_simple{
+		right: -122px;
+		font-size: 30px !important;
 		padding: 8px 12px;
+		i.fa-commenting{
+			top: -18px;
+			left: -4px;
+		}
+	}	
+}
+@media #{$s}{
+	a.side-tab-feedback_simple{
+		right: -100px;
+		font-size: 24px !important;
+		padding: 8px 12px;
+		i.fa-commenting{
+			top: -10px !important;
+			left: 0;
+			font-size:30px;
+		}
 	}
 }
+
 /* GreenGrass views page CSS: ********************************
  * duplecated CSS add here to make it work on 3rd party sites
  *************************************************************/
