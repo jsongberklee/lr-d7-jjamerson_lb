@@ -735,13 +735,13 @@ body.front .front-block.instagram .content .valign-helper, body.front .front-blo
 body.front .front-block.search-catalog {
   background-color: #25353c;
 }
-body.front .front-block.tbc-library, body.front .front-block.search-leadsheet, body.front .front-block.leadsheet {
+body.front .front-block.periodicals, body.front .front-block.tbc-library, body.front .front-block.search-leadsheet, body.front .front-block.leadsheet {
   background-color: #4c5960;
 }
-body.front .front-block.class-reserves {
+body.front .front-block.libguides, body.front .front-block.class-reserves {
   background-color: #8d44ad;
 }
-body.front .front-block.libguides, body.front .front-block.az-list, body.front .front-block.av-streaming {
+body.front .front-block.az-list, body.front .front-block.av-streaming {
   background-color: #5c8d23;
 }
 body.front .front-block.services, body.front .front-block.faq-jump, body.front .front-block.faq {
@@ -750,7 +750,7 @@ body.front .front-block.services, body.front .front-block.faq-jump, body.front .
 body.front .front-block.archives {
   background-color: #ae132a;
 }
-body.front .front-block.top-resources, body.front .front-block.acquisitions, body.front .front-block.periodicals {
+body.front .front-block.top-resources, body.front .front-block.acquisitions {
   background-color: #CD553D;
 }
 body.front .front-block.displays {

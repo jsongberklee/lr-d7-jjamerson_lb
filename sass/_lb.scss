@@ -382,12 +382,13 @@ body.front {
 
 		//&.top-resources{background-color:#f37338;}
 		
+		&.periodicals,
 		&.tbc-library,
 		&.search-leadsheet, &.leadsheet{background-color:#4c5960;}
 
+		&.libguides,
 		&.class-reserves{background-color:#8d44ad;}
 		
-		&.libguides,
 		&.az-list,
 		&.av-streaming{background-color:#5c8d23;}
 		
@@ -398,8 +399,7 @@ body.front {
 		&.archives{background-color:#ae132a;}
 
 		&.top-resources,
-		&.acquisitions,
-		&.periodicals{background-color:#CD553D;}
+		&.acquisitions{background-color:#CD553D;}
 		
 		&.displays{background-color:#ef9b0f;}
 		
