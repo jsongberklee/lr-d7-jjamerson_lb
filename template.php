@@ -125,7 +125,7 @@ function jjamerson_lb_preprocess_page(&$variables) {
 			});
 
 			jQuery(document).ready(function(){
-				jQuery("#block-block-12, #block-block-25, #block-block-13, #block-block-11, #block-block-20, #block-block-16, #block-block-10, #block-block-17, #block-block-18, #block-block-26, #block-block-27, #block-block-28").click(function(e){
+				jQuery("#block-block-12, #block-block-25, #block-block-13, #block-block-11, #block-block-20, #block-block-16, #block-block-10, #block-block-17, #block-block-18, #block-block-26, #block-block-27, #block-block-28, #block-block-30").click(function(e){
 					window.location.href = jQuery(this).find("a").attr("href");
 				});
 			});

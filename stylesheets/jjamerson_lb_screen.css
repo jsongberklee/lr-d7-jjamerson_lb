@@ -824,10 +824,10 @@ body.front .front-block:not(.twitter-feed):hover {
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-body.front .front-block.displays:hover, body.front .front-block.acquisitions:hover, body.front .front-block.archives:hover, body.front .front-block.libguides:hover, body.front .front-block.services:hover, body.front .front-block.class-reserves:hover, body.front .front-block.az-list:hover, body.front .front-block.av-streaming:hover, body.front .front-block.tbc-library:hover, body.front .front-block.periodicals:hover, body.front .front-block.leadsheet:hover, body.front .front-block.ill-request:hover {
+body.front .front-block.faq-jump:hover, body.front .front-block.displays:hover, body.front .front-block.acquisitions:hover, body.front .front-block.archives:hover, body.front .front-block.libguides:hover, body.front .front-block.services:hover, body.front .front-block.class-reserves:hover, body.front .front-block.az-list:hover, body.front .front-block.av-streaming:hover, body.front .front-block.tbc-library:hover, body.front .front-block.periodicals:hover, body.front .front-block.leadsheet:hover, body.front .front-block.ill-request:hover {
   cursor: pointer;
 }
-body.front .front-block.displays:hover a, body.front .front-block.acquisitions:hover a, body.front .front-block.archives:hover a, body.front .front-block.libguides:hover a, body.front .front-block.services:hover a, body.front .front-block.class-reserves:hover a, body.front .front-block.az-list:hover a, body.front .front-block.av-streaming:hover a, body.front .front-block.tbc-library:hover a, body.front .front-block.periodicals:hover a, body.front .front-block.leadsheet:hover a, body.front .front-block.ill-request:hover a {
+body.front .front-block.faq-jump:hover a, body.front .front-block.displays:hover a, body.front .front-block.acquisitions:hover a, body.front .front-block.archives:hover a, body.front .front-block.libguides:hover a, body.front .front-block.services:hover a, body.front .front-block.class-reserves:hover a, body.front .front-block.az-list:hover a, body.front .front-block.av-streaming:hover a, body.front .front-block.tbc-library:hover a, body.front .front-block.periodicals:hover a, body.front .front-block.leadsheet:hover a, body.front .front-block.ill-request:hover a {
   opacity: 0.1;
 }
 body.front .front-block:active {
