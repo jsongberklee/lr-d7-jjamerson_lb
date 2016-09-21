@@ -1503,12 +1503,12 @@ jQuery(document).ready(function($){
         $('.region-top-nav').removeClass('at-the-top');
       }
     }
-    
+
     if ($('body').hasClass('admin-menu') ) {
       if (scrollPosition > 29) {
         $('.region-top-nav').css('marginTop', 0);
         $('.region-top-nav').removeClass('at-the-top');
-      } else if (scrollPosition < 29) { 
+      } else if (scrollPosition < 29) {
         if ( !$('.region-top-nav').hasClass('at-the-top') ) {
           $('.region-top-nav').addClass('at-the-top');
         }
@@ -1516,7 +1516,7 @@ jQuery(document).ready(function($){
       }
     }
 
-    
+
     // cycle through each slide on the page
     $('.region-stripes .block').each(function(){
       // get the slide position relative to the document top, as an integer
@@ -1532,11 +1532,11 @@ jQuery(document).ready(function($){
       if ( (scrollPosition > startPos) && (scrollPosition < endPos) ) {
         // calculate the percentage of alteration
         var pixelDifference = endPos - scrollPosition;
-        var percentToTop = (1 - (pixelDifference * ceilingRatio) ) * 100;  
+        var percentToTop = (1 - (pixelDifference * ceilingRatio) ) * 100;
         if ($(this).hasClass('parallax') ) {
-          
+
           var alterationAmount = -50 * alterationPercent;
-          //$('.inner', this).css('transform', 'translate3d(0,' + alterationAmount + 'px, 0');  
+          //$('.inner', this).css('transform', 'translate3d(0,' + alterationAmount + 'px, 0');
         }
         if ( $(this).hasClass('highlights-stripe') && !$(this).hasClass('scroll-effect-executed') ) {
           alterationPercent = (25 - percentToTop );
@@ -1554,7 +1554,7 @@ jQuery(document).ready(function($){
             setTimeout(function(){ $('.views-row-1', parent).css('marginTop', '-300px'); }, 200);
           }
           */
-        } 
+        }
         if ( $(this).hasClass('fade-in-stripe') ) {
           // For the trigger distance, a smaller multiplier will delay the effect. A larger multiplier will hasten it.
           var triggerDistance = $(window).height() * 1.4;
@@ -1562,7 +1562,7 @@ jQuery(document).ready(function($){
             $(this).css('opacity', 1);
             setTimeout(function(){ $(this).removeClass('fade-in-stripe'); }, 2500);
           }
-        } 
+        }
       }
     });
   }
@@ -1574,9 +1574,9 @@ jQuery(document).ready(function($){
     });
   }
 
-  setTimeout( 
-    function() { 
-      //window.scrollTo(0, 0); 
+  setTimeout(
+    function() {
+      //window.scrollTo(0, 0);
       if (window.location.hash) {
         // look for an element with a matching ID first. Otherwise, look for an element with a matching "name" attribute.
         if ( $(window.location.hash).length) {
@@ -1592,9 +1592,13 @@ jQuery(document).ready(function($){
       }
     }, 100
   );
-  
+
   $("a[href*=\\#]").click(function() {
     var href = $(this).attr('href');
+
+		// by jsong, to bypass a external link with "#"
+		if(href.includes('http')) return;
+
     if ( $(href).length ) {
       var target = $(href);
     } else {
