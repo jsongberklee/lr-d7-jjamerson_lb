@@ -1389,6 +1389,57 @@ form.is-useful-form select {
   display: block;
 }
 
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper {
+  text-align: left;
+  margin-top: 14px;
+}
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-selector {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-eg,
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-ebsco {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 73%;
+}
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-eg form button,
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-eg form input,
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-ebsco form button,
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-ebsco form input {
+  display: inline-block;
+  vertical-align: text-top;
+}
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-eg form input,
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-ebsco form input {
+  width: 80%;
+}
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-eg form button,
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-ebsco form button {
+  width: 32px;
+  width: 30px;
+  margin-top: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #d81118;
+  border: none;
+  color: #eee;
+}
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-eg form button i,
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-ebsco form button i {
+  font-size: 22px !important;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-eg #guidedFieldSelectors,
+#block-bcmlib-searches-bcmlib-searches-tpac #search-wrapper #search-box-ebsco #guidedFieldSelectors {
+  display: none;
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE ***************************/
 /** layout variables
 $huge:'(min-width:1600px)';
@@ -1792,3 +1843,5 @@ $s-width: 480px;
 .gg-stat-yes td:nth-child(n+2):nth-child(-n+6) {
   text-decoration: line-through;
 }
+
+/*# sourceMappingURL=jjamerson_lb_screen.css.map */

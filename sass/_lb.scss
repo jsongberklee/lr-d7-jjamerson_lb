@@ -1049,6 +1049,68 @@ form.is-useful-form{
 	}
 }
 
+#block-bcmlib-searches-bcmlib-searches-tpac{
+
+	#search-wrapper{
+		text-align:left;
+		margin-top:14px;
+
+		#search-selector{
+			display:inline-block;
+			vertical-align:top;
+			width: 25%;
+		}
+
+		#search-box-eg,
+		#search-box-ebsco{
+			display:inline-block;
+			vertical-align:top;
+			text-align:left;
+			width: 73%;
+
+			form{
+
+				button,
+				input{
+					display:inline-block;
+					vertical-align:text-top;
+				}
+
+				input{
+					width:80%;
+				}
+
+				button{
+					width:32px;
+					width:30px;
+					margin-top:0;
+					-moz-border-radius: 2px;
+				  -webkit-border-radius: 2px;
+				  border-radius: 2px;
+				  overflow: hidden;
+				  background-color: #d81118;
+				  border: none;
+				  color: #eee;
+
+					i{
+						font-size: 22px !important;
+						margin: 0 0 0 0;
+						padding: 0 0 0 0;
+						&:before{
+						}
+					}
+				}
+
+			}
+
+			#guidedFieldSelectors{display:none;}
+
+		}
+
+	}
+
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE ***************************/
 /** layout variables
 $huge:'(min-width:1600px)';
