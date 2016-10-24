@@ -1111,6 +1111,25 @@ form.is-useful-form{
 
 }
 
+body.page-finding-aids-the-works-of-john-coltrane{
+	.views-field-field-call-number{
+		white-space: nowrap;
+	}
+	.view-finding-aids .view-header{
+		float:right;
+	}
+	#views-exposed-form-finding-aids-page .views-widget-sort-by .form-item-sort-by label{
+		display:block;
+	}
+	#views-exposed-form-finding-aids-page .views-widget-sort-order .form-item-sort-order label{
+		display:block;
+	}
+	#footer{
+		margin-top:3em;
+	}	
+}
+
+
 /* MEDIA QUERIES FOR RESPONSIVE ***************************/
 /** layout variables
 $huge:'(min-width:1600px)';

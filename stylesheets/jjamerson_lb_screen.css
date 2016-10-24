@@ -1440,6 +1440,22 @@ form.is-useful-form select {
   display: none;
 }
 
+body.page-finding-aids-the-works-of-john-coltrane .views-field-field-call-number {
+  white-space: nowrap;
+}
+body.page-finding-aids-the-works-of-john-coltrane .view-finding-aids .view-header {
+  float: right;
+}
+body.page-finding-aids-the-works-of-john-coltrane #views-exposed-form-finding-aids-page .views-widget-sort-by .form-item-sort-by label {
+  display: block;
+}
+body.page-finding-aids-the-works-of-john-coltrane #views-exposed-form-finding-aids-page .views-widget-sort-order .form-item-sort-order label {
+  display: block;
+}
+body.page-finding-aids-the-works-of-john-coltrane #footer {
+  margin-top: 3em;
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE ***************************/
 /** layout variables
 $huge:'(min-width:1600px)';
