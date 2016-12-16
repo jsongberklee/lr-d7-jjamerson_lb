@@ -905,6 +905,13 @@ a.views-more-link:after{
 	.even-weekhours,
 	.odd-weekhours {
 	  background-color: none;
+
+		i.fa-circle{
+			position: absolute;
+			margin-right: .5em;
+			margin-left: -20px;
+		  margin-top: 2px;
+		}
 	}
 	.create-specialday,
 	.weekhour-edit{

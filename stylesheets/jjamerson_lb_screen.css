@@ -1244,6 +1244,13 @@ a.views-more-link:after {
 #block-weekhours-weekhours .odd-weekhours {
   background-color: none;
 }
+#block-weekhours-weekhours .even-weekhours i.fa-circle,
+#block-weekhours-weekhours .odd-weekhours i.fa-circle {
+  position: absolute;
+  margin-right: .5em;
+  margin-left: -20px;
+  margin-top: 2px;
+}
 #block-weekhours-weekhours .create-specialday a,
 #block-weekhours-weekhours .weekhour-edit a {
   color: #333;
